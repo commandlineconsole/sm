@@ -3,21 +3,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>uk.gov.ipt</groupId>
+        <groupId>com.sharepoint.software.solutiont</groupId>
         <artifactId>java-parent</artifactId>
         <version>0.46</version>
     </parent>
 
-    <groupId>uk.gov.ipt</groupId>
-    <artifactId>ipt-mi-etl</artifactId>
+    <groupId>com.sharepoint.software.solutiont</groupId>
+    <artifactId>etl</artifactId>
     <version>1.126-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>ipt-mi-etl-commons</module>
-        <module>ipt-mi-etl-bom</module>
-        <module>ipt-mi-stream</module>
-        <module>ipt-mi-dw-vault</module>
+        <module>etl-commons</module>
+        <module>etl-bom</module>
+        <module>stream</module>
+        <module>dw-vault</module>
     </modules>
 
     <name>${project.artifactId}</name>

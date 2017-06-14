@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>uk.gov.ipt</groupId>
+        <artifactId>java-parent</artifactId>
+        <version>0.46</version>
+    </parent>
+
+    <groupId>uk.gov.ipt</groupId>
+    <artifactId>ipt-mi-etl-rpms</artifactId>
+    <version>0.184-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>IPT MI ETL RPMS</name>
+
+    <modules>
+        <module>ipt-mi-dw-vault-rpm</module>
+        <module>ipt-mi-stream-rpm</module>
+    </modules>
+
+    <properties>
+        <maven-dependency-plugin.version>2.10</maven-dependency-plugin.version>
+        <rpm-maven-plugin.version>2.1.5</rpm-maven-plugin.version>
+        <maven-antrun-plugin.version>1.8</maven-antrun-plugin.version>
+
+        <ipt-mi-etl-bom.version>1.124</ipt-mi-etl-bom.version>
+        <mvn_version>RELEASE</mvn_version>
+
+    </properties>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>uk.gov.ipt</groupId>
+                <artifactId>ipt-mi-etl-bom</artifactId>
+                <version>${ipt-mi-etl-bom.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+            <plugins>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>rpm-maven-plugin</artifactId>
+                    <version>${rpm-maven-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-antrun-plugin</artifactId>
+                    <version>${maven-antrun-plugin.version}</version>
+                </plugin>
+
+                <!-- Version management -->
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>versions-maven-plugin</artifactId>
+                    <configuration>
+                        <includeProperties>ipt-mi-etl-bom.version</includeProperties>
+                        <generateBackupPoms>false</generateBackupPoms>
+                    </configuration>
+                </plugin>
+
+                <!-- disable maven dependencies -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>${plugin.dependency.version}</version>
+                    <executions>
+                        <execution>
+                            <id>analyze</id>
+                            <phase>package</phase>
+                            <goals>
+                                <goal>analyze</goal>
+                                <goal>analyze-dep-mgt</goal>
+                                <goal>analyze-duplicate</goal>
+                            </goals>
+                            <configuration>
+                                <ignoreDirect>false</ignoreDirect>
+                                <failOnWarning>false</failOnWarning>
+                                <failBuild>false</failBuild>
+                                <outputXML>true</outputXML>
+                                <ignoredUnusedDeclaredDependencies>
+                                    <ignoredUnusedDeclaredDependency>org.slf4j:*</ignoredUnusedDeclaredDependency>
+                                    <ignoredUnusedDeclaredDependency>org.hamcrest:*</ignoredUnusedDeclaredDependency>
+                                    <ignoredUnusedDeclaredDependency>org.mockito:*</ignoredUnusedDeclaredDependency>
+                                    <ignoredUnusedDeclaredDependency>javax.el:javax.el-api</ignoredUnusedDeclaredDependency>
+                                    <ignoredUnusedDeclaredDependency>org.jboss.logging:jboss-logging</ignoredUnusedDeclaredDependency>
+                                </ignoredUnusedDeclaredDependencies>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+                <!-- disable maven enforcer  -->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-enforcer-plugin</artifactId>
+                    <version>1.4.1</version>
+                    <executions>
+                        <execution>
+                            <id>enforce</id>
+                            <phase>package</phase>
+                            <configuration>
+                                <rules>
+                                    <dependencyConvergence />
+                                    <banCircularDependencies />
+                                    <banDuplicateClasses>
+                                        <findAllDuplicates>true</findAllDuplicates>
+                                        <ignoreClasses>
+                                            <ignoreClass>javax.*</ignoreClass>
+                                            <ignoreClass>*package-info*</ignoreClass>
+                                            <ignoreClass>org.xml*</ignoreClass>
+                                            <ignoreClass>org.w3c*</ignoreClass>
+                                            <ignoreClass>org.apache.xmlcommons*</ignoreClass>
+                                            <ignoreClass>org.slf4j.impl.StaticMDCBinder*</ignoreClass>
+                                            <ignoreClass>org.slf4j.impl.StaticMarkerBinder*</ignoreClass>
+                                            <ignoreClass>org.slf4j.impl.StaticLoggerBinder*</ignoreClass>
+                                            <ignoreClass>org.apache.jasper.compiler.Localizer*</ignoreClass>
+                                            <ignoreClass>org.joda.convert.*</ignoreClass>
+                                            <ignoreClass>org.apache.activemq.*</ignoreClass>
+                                            <ignoreClass>org.apache.kahadb.*</ignoreClass>
+                                            <ignoreClass>com.sun.istack.*</ignoreClass>
+                                            <ignoreClass>com.sun.activation.*</ignoreClass>
+                                            <ignoreClass>com.esotericsoftware.*</ignoreClass>
+                                            <ignoreClass>org.aopalliance.*</ignoreClass>
+                                        </ignoreClasses>
+                                    </banDuplicateClasses>
+
+                                    <bannedDependencies>
+                                        <excludes>
+                                            <exclude>commons-logging</exclude>
+                                            <exclude>log4j</exclude>
+                                            <exclude>org.slf4j:slf4j-log4j12</exclude>
+                                            <exclude>org.slf4j:slf4j-log4j13</exclude>
+                                            <exclude>javax.servlet:servlet-api</exclude>
+                                            <exclude>org.hamcrest:hamcrest-all</exclude>
+                                        </excludes>
+                                        <includes>
+                                            <include>javax.servlet:servlet-api:*:jar:provided</include>
+                                        </includes>
+                                    </bannedDependencies>
+                                </rules>
+                                <fail>false</fail>
+                            </configuration>
+                            <goals>
+                                <goal>enforce</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+    </build>
+</project>

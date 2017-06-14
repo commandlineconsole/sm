@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>ipt-mi-etl</artifactId>
+        <groupId>uk.gov.ipt</groupId>
+        <version>1.126-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>ipt-mi-etl-bom</artifactId>
+    <packaging>pom</packaging>
+    <name>IPT MI ETL BOM</name>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>uk.gov.ipt</groupId>
+                <artifactId>ipt-mi-etl-commons</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>uk.gov.ipt</groupId>
+                <artifactId>ipt-mi-stream</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>uk.gov.ipt</groupId>
+                <artifactId>ipt-mi-dw-vault</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <directory>${project.basedir}/target</directory>
+        <outputDirectory>${project.build.directory}/classes</outputDirectory>
+    </build>
+</project>

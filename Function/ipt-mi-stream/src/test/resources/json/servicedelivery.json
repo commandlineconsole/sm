@@ -1,0 +1,86 @@
+{
+  "attributes": [
+    {
+      "attributeValueRefDataElement": {
+        "code": "BRP",
+        "id": 31712
+      },
+      "created": "2017-01-03T17:04:15.604820",
+      "createdBy": null,
+      "internalHandle": {
+        "interface_identifier": "BIOMETRIC_CASE_TYPE_297047",
+        "unique_identifier": "c9aae0713c6502b42790f2dfb8a07d60f68ff720c8782a475a38b01644497049",
+        "visibility_marker": "DEFAULT"
+      },
+      "serviceDeliveryAttributeTypeCode": "BIOMETRIC_CASE_TYPE",
+      "serviceDeliveryAttributeTypeId": 10716
+    },
+    {
+      "attributeValueRefDataElement": {
+        "code": "DOOEAF",
+        "id": 45402
+      },
+      "created": "2017-01-03T17:04:15.604820",
+      "createdBy": null,
+      "internalHandle": {
+        "interface_identifier": "CHANNEL_297047",
+        "unique_identifier": "0fc791325b018ff8c9c5fdc8838d822249527ff32bb085fd84b934d1c22dcc74",
+        "visibility_marker": "DEFAULT"
+      },
+      "serviceDeliveryAttributeTypeCode": "CHANNEL",
+      "serviceDeliveryAttributeTypeId": 10704
+    },
+    {
+      "attributeValueString": "297047",
+      "created": "2017-01-03T17:04:15.604820",
+      "createdBy": null,
+      "internalHandle": {
+        "interface_identifier": "EXTSD_REF_297047",
+        "unique_identifier": "4435600ba05b008bb57962b44e3263c99427f86b0788038d830be6ee3674b613",
+        "visibility_marker": "DEFAULT"
+      },
+      "serviceDeliveryAttributeTypeCode": "EXTSD_REF",
+      "serviceDeliveryAttributeTypeId": 10714
+    },
+    {
+      "attributeValueDate": "2015-07-17T00:00:00Z",
+      "created": "2017-01-03T17:04:15.604820",
+      "createdBy": null,
+      "internalHandle": {
+        "interface_identifier": "VALIDTO_297047",
+        "unique_identifier": "0cde16fb427faf2a2b95d7860c2beb269f105692e122be8c548dd254705f2670",
+        "visibility_marker": "DEFAULT"
+      },
+      "serviceDeliveryAttributeTypeCode": "VALIDTO",
+      "serviceDeliveryAttributeTypeId": 10711
+    }
+  ],
+  "created": "2017-01-03T17:04:15.604820",
+  "createdBy": null,
+  "createdDate": "2017-01-03T17:04:16Z",
+  "documentAttachments": [],
+  "externalHandleSpace": "CID_CASES",
+  "externalHandleValue": "297047",
+  "indirectInvolvements": [],
+  "internalHandle": {
+    "interface_identifier": "CID_CASES_297047",
+    "unique_identifier": "f88972c2508af18423f347248bd81dac500b7f57b753af64867c6befaeb7a4fb",
+    "visibility_marker": "DEFAULT"
+  },
+  "involvements": [],
+  "lastUpdated": "2017-01-03T17:04:16Z",
+  "processInstances": [],
+  "serviceDeliveryProcesses": [],
+  "serviceDeliveryStatus": {
+    "refDataValueCode": "EXTERNAL",
+    "refDataValueId": 10605,
+    "refDataValueLongDesc": "Legacy case being processed on external system",
+    "refDataValueShortDesc": "External Case"
+  },
+  "serviceDeliveryType": {
+    "refDataValueCode": "LTR",
+    "refDataValueId": 10306,
+    "refDataValueLongDesc": "Leave to Remain in the UK",
+    "refDataValueShortDesc": "LTR"
+  }
+}

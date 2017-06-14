@@ -1,0 +1,325 @@
+{
+  "biographic_sets": [
+    {
+      "biographic_set_purpose": {
+        "code": "CB",
+        "longDescription": "CORE BIOGRAPHICS",
+        "shortDescription": "CORE BIOGRAPHICS"
+      },
+      "biographics": {
+        "DATE_OF_BIRTH": {
+          "created": "2016-12-20T10:17:09.711967",
+          "created_by": null,
+          "internal_handle": {
+            "interface_identifier": "CB_DATE_OF_BIRTH_279377",
+            "unique_identifier": "7649a6bf6a12cecf754c7872da23a2707832521c29de40b2ab979aa6e2cbe822",
+            "visibility_marker": "DEFAULT"
+          },
+          "type": "DATE_OF_BIRTH",
+          "value": "1994-07-16",
+          "value_type": "string"
+        },
+        "DAY_OF_BIRTH": {
+          "created": "2016-12-20T10:17:09.711967",
+          "created_by": null,
+          "internal_handle": {
+            "interface_identifier": "CB_DAY_OF_BIRTH_279377",
+            "unique_identifier": "f4bd1e92f6181d42f4cd31616334ec9723783e542c0196d843add82d36a826a7",
+            "visibility_marker": "DEFAULT"
+          },
+          "type": "DAY_OF_BIRTH",
+          "value": "16",
+          "value_type": "string"
+        },
+        "FAMILY_NAME": {
+          "created": "2016-12-20T10:17:09.711967",
+          "created_by": null,
+          "internal_handle": {
+            "interface_identifier": "CB_FAMILY_NAME_279377",
+            "unique_identifier": "2665d5344e7213891b935435174d67b2e332869df9f53d7956e53252ea9e86a6",
+            "visibility_marker": "DEFAULT"
+          },
+          "type": "FAMILY_NAME",
+          "value": "Chambers",
+          "value_type": "string"
+        },
+        "FULL_NAME": {
+          "created": "2016-12-20T10:17:09.711967",
+          "created_by": null,
+          "internal_handle": {
+            "interface_identifier": "CB_FULL_NAME_279377",
+            "unique_identifier": "3e6e0a03869ed7cb457cca8e2acd10584055fcd0829e99f25bca6ef8e532f61f",
+            "visibility_marker": "DEFAULT"
+          },
+          "type": "FULL_NAME",
+          "value": "Barbara XYZNorris",
+          "value_type": "string"
+        },
+        "GENDER": {
+          "created": "2016-12-20T10:17:09.711967",
+          "created_by": null,
+          "internal_handle": {
+            "interface_identifier": "CB_GENDER_279377",
+            "unique_identifier": "335ee1f59c4c201c0a63d677343adea78f09a12873ce516d5b926075010b31f6",
+            "visibility_marker": "DEFAULT"
+          },
+          "reference_data_set": "GENDER",
+          "type": "GENDER",
+          "value": "M",
+          "value_type": "string"
+        },
+        "LANGUAGE": {
+          "created": "2016-12-20T10:17:09.711967",
+          "created_by": null,
+          "internal_handle": {
+            "interface_identifier": "CB_LANGUAGE_279377",
+            "unique_identifier": "bec332c750f024512783bf02aff5bb78612a1eb0a31f5b19a06f065fde6661e5",
+            "visibility_marker": "DEFAULT"
+          },
+          "reference_data_set": "LANGUAGE",
+          "type": "LANGUAGE",
+          "value": "ENG",
+          "value_type": "string"
+        },
+        "MONTH_OF_BIRTH": {
+          "created": "2016-12-20T10:17:09.711967",
+          "created_by": null,
+          "internal_handle": {
+            "interface_identifier": "CB_MONTH_OF_BIRTH_279377",
+            "unique_identifier": "c14d11beebea5efe146648f1904379faacbc904005b97ed3df71b6ad436e4550",
+            "visibility_marker": "DEFAULT"
+          },
+          "type": "MONTH_OF_BIRTH",
+          "value": "7",
+          "value_type": "string"
+        },
+        "NATIONALITY": {
+          "created": "2016-12-20T10:17:09.711967",
+          "created_by": null,
+          "internal_handle": {
+            "interface_identifier": "CB_NATIONALITY_279377",
+            "unique_identifier": "d1fa707390b03d39d06770acd2e0ee69bf541b671b9ed17a5d9786bf4a28be23",
+            "visibility_marker": "DEFAULT"
+          },
+          "reference_data_set": "NATIONALITY",
+          "type": "NATIONALITY",
+          "value": "UZB",
+          "value_type": "string"
+        },
+        "OCCUPATION": {
+          "created": "2016-12-20T10:17:09.711967",
+          "created_by": null,
+          "internal_handle": {
+            "interface_identifier": "CB_OCCUPATION_279377",
+            "unique_identifier": "e9f61b56df246736865650ee0b48cff4397500b366429fc0698af01c0e79000c",
+            "visibility_marker": "DEFAULT"
+          },
+          "type": "OCCUPATION",
+          "value": "Certified Accountant",
+          "value_type": "string"
+        },
+        "PLACE_OF_BIRTH": {
+          "created": "2016-12-20T10:17:09.711967",
+          "created_by": null,
+          "internal_handle": {
+            "interface_identifier": "CB_PLACE_OF_BIRTH_279377",
+            "unique_identifier": "e948ce4d7252ef9b53e51e27c4be53926b473412342bb3dbfe97f1eaa9cc35a5",
+            "visibility_marker": "DEFAULT"
+          },
+          "type": "PLACE_OF_BIRTH",
+          "value": "RINTELN",
+          "value_type": "string"
+        },
+        "RELIGION": {
+          "created": "2016-12-20T10:17:09.711967",
+          "created_by": null,
+          "internal_handle": {
+            "interface_identifier": "CB_RELIGION_279377",
+            "unique_identifier": "a66d3276d847e5d01611e1574e8c2a27e58da66c2690ee8adb7fc7d158bcea50",
+            "visibility_marker": "DEFAULT"
+          },
+          "reference_data_set": "RELIGION",
+          "type": "RELIGION",
+          "value": "ASSM",
+          "value_type": "string"
+        },
+        "TITLE": {
+          "created": "2016-12-20T10:17:09.711967",
+          "created_by": null,
+          "internal_handle": {
+            "interface_identifier": "CB_TITLE_279377",
+            "unique_identifier": "bb617171f4fb4f50e284256643fd0205b4fa28530c28de141587fecf53846a1a",
+            "visibility_marker": "DEFAULT"
+          },
+          "reference_data_set": "TITLE",
+          "type": "TITLE",
+          "value": "DR",
+          "value_type": "string"
+        },
+        "YEAR_OF_BIRTH": {
+          "created": "2016-12-20T10:17:09.711967",
+          "created_by": null,
+          "internal_handle": {
+            "interface_identifier": "CB_YEAR_OF_BIRTH_279377",
+            "unique_identifier": "1e25db29468f1e4a365f1eebe74ee56903a0344a5c96ce9c0173267204794569",
+            "visibility_marker": "DEFAULT"
+          },
+          "type": "YEAR_OF_BIRTH",
+          "value": "1994",
+          "value_type": "string"
+        }
+      },
+      "created": "2016-12-20T10:15:43.208315",
+      "created_by": null,
+      "external_handle": {
+        "handle_space": "CID_PEOPLE",
+        "handle_value": "279377",
+        "unique_identifier": "CID_PEOPLE_279377"
+      },
+      "internal_handle": {
+        "interface_identifier": "CID_PEOPLE_279377",
+        "unique_identifier": "48fa5462b8ab34e82e6c7a0c7c0f688bbcac8a02933f977f54c32e3bc0600340",
+        "visibility_marker": "DEFAULT"
+      }
+    },
+    {
+      "biographic_set_purpose": {
+        "code": "AKA",
+        "longDescription": "Also known as",
+        "shortDescription": "Also known as"
+      },
+      "biographics": {
+        "FULL_NAME": {
+          "created": "2016-12-20T10:16:01.335173",
+          "created_by": null,
+          "internal_handle": {
+            "interface_identifier": "AKA_FULL_NAME_279419",
+            "unique_identifier": "0785ff45c7800bba56d03992805b212c35a62b38a1e930bfcef422c6fa95c92b",
+            "visibility_marker": "DEFAULT"
+          },
+          "type": "FULL_NAME",
+          "value": "Perkinson",
+          "value_type": "string"
+        },
+        "NATIONALITY": {
+          "created": "2016-12-20T10:16:01.335173",
+          "created_by": null,
+          "internal_handle": {
+            "interface_identifier": "AKA_NATIONALITY_279419",
+            "unique_identifier": "43e0f6faf9b16982031670eda6741636c2bb22af88f94922c3bc38b034e6c6f1",
+            "visibility_marker": "DEFAULT"
+          },
+          "reference_data_set": "NATIONALITY",
+          "type": "NATIONALITY",
+          "value": "ESP",
+          "value_type": "string"
+        }
+      },
+      "created": "2016-12-20T10:16:01.335173",
+      "created_by": null,
+      "external_handle": {
+        "handle_space": "CID_PEOPLE_ALIASES",
+        "handle_value": "279419",
+        "unique_identifier": "CID_PEOPLE_ALIASES_279419"
+      },
+      "internal_handle": {
+        "interface_identifier": "CID_PEOPLE_ALIASES_279419",
+        "unique_identifier": "1200a53d67b2abafe51ba598efc533193092eea21307db49e1592552f8d383eb",
+        "visibility_marker": "DEFAULT"
+      }
+    }
+  ],
+  "biometrics": [],
+  "conditions": [
+    {
+      "conditionDate": "2015-09-07T17:20:20.000Z",
+      "conditionEndDate": "2016-12-20T10:17:14.751Z",
+      "conditionNote": "SERIOUS OFFENDER\nNew Special Condition: Updated",
+      "conditionType": {
+        "code": "AL_CRIME",
+        "longDescription": "Alleged Criminality",
+        "shortDescription": "Alleged Criminality"
+      },
+      "conditionUpdateDate": "2016-12-20T10:17:14.751Z",
+      "created": "2016-12-20T10:17:14.741046",
+      "createdBy": null,
+      "externalHandle": {
+        "handle_space": "CID_CONDITION",
+        "handle_value": "279419",
+        "unique_identifier": "CID_CONDITION_279419"
+      },
+      "internalHandle": {
+        "interface_identifier": "CID_CONDITION_279419",
+        "unique_identifier": "aeaa5fd41754bbd9d8738740e6bd0f28422b8cc881bfa6444bb5eb38c1d85303",
+        "visibility_marker": "DEFAULT"
+      },
+      "originatingUser": null
+    },
+    {
+      "conditionDate": "2015-09-06T17:20:20.000Z",
+      "conditionEndDate": null,
+      "conditionNote": "New Person Note: Updated",
+      "conditionType": {
+        "code": "PERNOTE",
+        "longDescription": "Specific notes against a person",
+        "shortDescription": "Person Note"
+      },
+      "conditionUpdateDate": "2016-12-20T10:17:12.237Z",
+      "created": "2016-12-20T10:17:12.228278",
+      "createdBy": null,
+      "externalHandle": {
+        "handle_space": "CID_PERSON_NOTE",
+        "handle_value": "279419",
+        "unique_identifier": "CID_PERSON_NOTE_279419"
+      },
+      "internalHandle": {
+        "interface_identifier": "CID_PERSON_NOTE_279419",
+        "unique_identifier": "91500af5bef803c212dd3a5ea447d6e1223a09332b6acbcb1bc458ca4029086e",
+        "visibility_marker": "DEFAULT"
+      },
+      "originatingUser": "User"
+    }
+  ],
+  "containing_person_handle": {
+    "interface_identifier": "CID_PEOPLE_279377",
+    "unique_identifier": "48fa5462b8ab34e82e6c7a0c7c0f688bbcac8a02933f977f54c32e3bc0600340",
+    "visibility_marker": "DEFAULT"
+  },
+  "created": "2016-12-20T10:17:09.711967",
+  "created_by": null,
+  "descriptions": [],
+  "external_handle": {
+    "handle_space": "CID_PEOPLE",
+    "handle_value": "279377",
+    "unique_identifier": "CID_PEOPLE_279377"
+  },
+  "identity_media_sets": [],
+  "internal_handle": {
+    "interface_identifier": "CID_PEOPLE_279377",
+    "unique_identifier": "48fa5462b8ab34e82e6c7a0c7c0f688bbcac8a02933f977f54c32e3bc0600340",
+    "visibility_marker": "DEFAULT"
+  },
+  "references": [
+    {
+      "created": "2016-12-20T10:17:17.251940",
+      "createdBy": null,
+      "externalHandle": {
+        "handle_space": "CID_REFERENCE",
+        "handle_value": "279419",
+        "unique_identifier": "CID_REFERENCE_279419"
+      },
+      "internalHandle": {
+        "interface_identifier": "CID_REFERENCE_279419",
+        "unique_identifier": "7b15117fc146153b410bd314aab85ae74ef9ab019cb403fb9f4d79c53c26ddd1",
+        "visibility_marker": "DEFAULT"
+      },
+      "referenceType": {
+        "code": "PASSPORT",
+        "longDescription": "Passport",
+        "shortDescription": "Passport"
+      },
+      "referenceValue": "112233"
+    }
+  ],
+  "source": "CID"
+}

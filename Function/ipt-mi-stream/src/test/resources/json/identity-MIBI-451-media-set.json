@@ -1,0 +1,353 @@
+{
+  "created": "2016-12-20T12:35:52.956",
+  "internal_handle":
+  {
+    "unique_identifier": "70010a2651ca831a44c0e431d435c11f37d8585224e184f733643ba6ca9e71e2",
+    "visibility_marker": "DEFAULT",
+    "interface_identifier": "IABS_IDENTITY_280137ZP1"
+  },
+
+  "external_handle":
+  {
+    "unique_identifier": "IABS_IDENTITY_280137ZP1",
+    "handle_value": "280137ZP1",
+    "handle_space": "IABS_IDENTITY"
+  },
+
+  "containing_person_handle":
+  {
+    "unique_identifier": "b92c6ef7147102194052de93901d104c8f1fce8019692bd4b274bb6fb62e59fd",
+    "visibility_marker": "DEFAULT",
+    "interface_identifier": "CID_PEOPLE_280136"
+  },
+
+  "source": "IABS",
+  "biometrics":
+  [
+    {
+      "externalHandle":
+      {
+        "unique_identifier": "IABS_BIOMETRIC_280137ZP1_RECORD_EVENT_REFERENCE",
+        "handle_value": "280137ZP1_RECORD_EVENT_REFERENCE",
+        "handle_space": "IABS_BIOMETRIC"
+      },
+
+      "internalHandle":
+      {
+        "unique_identifier": "602486a2e662b6b0921f11b18712e2b371294a31c28261c806ab35f4e12e23a8",
+        "visibility_marker": "DEFAULT",
+        "interface_identifier": "IABS_BIOMETRIC_280137ZP1_RECORD_EVENT_REFERENCE"
+      },
+
+      "biometricReferenceType": "RECORD_EVENT_REFERENCE",
+      "biometricNature": "FACE",
+      "biometricReferenceValue": "280137ZP1",
+      "created": "2016-12-20T12:35:52.956",
+      "createdBy": null
+    },
+
+    {
+      "externalHandle":
+      {
+        "unique_identifier": "IABS_BIOMETRIC_280137_UERN",
+        "handle_value": "280137_UERN",
+        "handle_space": "IABS_BIOMETRIC"
+      },
+
+      "internalHandle":
+      {
+        "unique_identifier": "1fd5b811cccef7784cb91b228e28fa12a4edae65d14eda2b07d7a7b4d5f03b5d",
+        "visibility_marker": "DEFAULT",
+        "interface_identifier": "IABS_BIOMETRIC_280137_UERN"
+      },
+
+      "biometricReferenceType": "UERN",
+      "biometricNature": "FACE",
+      "biometricReferenceValue": "280137",
+      "created": "2016-12-20T12:35:52.956",
+      "createdBy": null
+    },
+
+    {
+      "externalHandle":
+      {
+        "unique_identifier": "IABS_BIOMETRIC_PAA04/382421/A_PERSON_IDENTITY",
+        "handle_value": "PAA04/382421/A_PERSON_IDENTITY",
+        "handle_space": "IABS_BIOMETRIC"
+      },
+
+      "internalHandle":
+      {
+        "unique_identifier": "1277c2e89b42c5b0d9589d57135c0be1409c3e26cce211f96352b9d2c46a5309",
+        "visibility_marker": "DEFAULT",
+        "interface_identifier": "IABS_BIOMETRIC_PAA04/382421/A_PERSON_IDENTITY"
+      },
+
+      "biometricReferenceType": "PERSON_IDENTITY",
+      "biometricNature": "FACE",
+      "biometricReferenceValue": "PAA04/382421/A",
+      "created": "2016-12-20T12:35:52.956",
+      "createdBy": null
+    }
+  ],
+
+  "descriptions":
+  [
+
+  ],
+
+  "references":
+  [
+    {
+      "internalHandle":
+      {
+        "unique_identifier": "005adb5396dcbfceb2d9ba5f24939a2c81aea35d99ecce0dbabc131ca612dd52",
+        "visibility_marker": "DEFAULT",
+        "interface_identifier": "IABS_REFERENCES_PPT_280137ZP1"
+      },
+
+      "externalHandle":
+      {
+        "unique_identifier": "IABS_REFERENCES_PPT_280137ZP1",
+        "handle_value": "PPT_280137ZP1",
+        "handle_space": "IABS_REFERENCES"
+      },
+
+      "referenceType":
+      {
+        "code": "PPT",
+        "shortDescription": "",
+        "longDescription": ""
+      },
+
+      "referenceValue": "9870970U90",
+      "created": "2016-12-20T12:35:52.956",
+      "createdBy": null
+    }
+  ],
+
+  "conditions":
+  [
+
+  ],
+
+  "created_by": null,
+  "biographic_sets":
+  [
+    {
+      "internal_handle":
+      {
+        "unique_identifier": "5edfed117b5ab6ad6f2a8f2cadb6a5ba6daa1177296cc159c5db031a6a36b44c",
+        "visibility_marker": "DEFAULT",
+        "interface_identifier": "IABS_BIOGRAPHIC_SET_CB_280137ZP1"
+      },
+
+      "external_handle":
+      {
+        "unique_identifier": "IABS_BIOGRAPHIC_SET_CB_280137ZP1",
+        "handle_value": "CB_280137ZP1",
+        "handle_space": "IABS_BIOGRAPHIC_SET"
+      },
+
+      "biographic_set_purpose":
+      {
+        "code": "CB",
+        "shortDescription": "CORE BIOGRAPHICS",
+        "longDescription": "CORE BIOGRAPHICS"
+      },
+
+      "created": "2016-12-20T12:35:52.956",
+      "created_by": null,
+      "biographics":
+      {
+        "DATE_OF_BIRTH":
+        {
+          "internal_handle":
+          {
+            "unique_identifier": "046b2e1bc03ac0d97740506f88794c96d8f49cf0484749cf3db3d9c8835a45b0",
+            "visibility_marker": "DEFAULT",
+            "interface_identifier": "e30c3d88-ecd0-484d-baad-8686f6690c5a"
+          },
+
+          "type": "DATE_OF_BIRTH",
+          "value": "1994-07-10",
+          "value_type": "string",
+          "created": "2016-12-20T12:35:52.956",
+          "created_by": null
+        },
+
+        "DAY_OF_BIRTH":
+        {
+          "internal_handle":
+          {
+            "unique_identifier": "2de4d1174581f89557610264a5a1dcf7cc46be13bd76753ec12317005385bd57",
+            "visibility_marker": "DEFAULT",
+            "interface_identifier": "CB_DAY_OF_BIRTH_CB_280137ZP1"
+          },
+
+          "type": "DAY_OF_BIRTH",
+          "value": "10",
+          "value_type": "string",
+          "created": "2016-12-20T12:35:52.956",
+          "created_by": null
+        },
+
+        "FAMILY_NAME":
+        {
+          "internal_handle":
+          {
+            "unique_identifier": "35bb43200f180f5bc278b5d0d2e351fc66520602282d6ee80a1eab63ebd767ac",
+            "visibility_marker": "DEFAULT",
+            "interface_identifier": "4135a3df-3c72-4cb8-9fb2-d8193fe15ed2"
+          },
+
+          "type": "FAMILY_NAME",
+          "value": "McCabe",
+          "value_type": "string",
+          "created": "2016-12-20T12:35:52.956",
+          "created_by": null
+        },
+
+        "FULL_NAME":
+        {
+          "internal_handle":
+          {
+            "unique_identifier": "bd3d922826526a978f8a9ea992218cefaaf64b2bb70e87158b764ba4d7958678",
+            "visibility_marker": "DEFAULT",
+            "interface_identifier": "3b1f91b2-f2e1-4bcc-8fa3-ab0d31da7b3d"
+          },
+
+          "type": "FULL_NAME",
+          "value": "ABC DEF",
+          "value_type": "string",
+          "created": "2016-12-20T12:35:52.956",
+          "created_by": null
+        },
+
+        "GENDER":
+        {
+          "internal_handle":
+          {
+            "unique_identifier": "49180fad7f6b7ac208e1484d5faa9b22d1e2bebc50b5ec63a49a636546d1f61b",
+            "visibility_marker": "DEFAULT",
+            "interface_identifier": "c01964dd-4141-4418-af6b-1ea8c09c9659"
+          },
+
+          "type": "GENDER",
+          "value": "F",
+          "value_type": "string",
+          "created": "2016-12-20T12:35:52.956",
+          "created_by": null
+        },
+
+        "GIVEN_NAME":
+        {
+          "internal_handle":
+          {
+            "unique_identifier": "56e7c850f40314857519b0d8bfd157609b580262d491b649d6897d0de7fca13b",
+            "visibility_marker": "DEFAULT",
+            "interface_identifier": "2ee81da1-b32c-4dbb-b2ec-d39f9f50b3fb"
+          },
+
+          "type": "GIVEN_NAME",
+          "value": "Barbara",
+          "value_type": "string",
+          "created": "2016-12-20T12:35:52.956",
+          "created_by": null
+        },
+
+        "MONTH_OF_BIRTH":
+        {
+          "internal_handle":
+          {
+            "unique_identifier": "209a1dd54335c0d3cbc03c1014834b0bcecc92b52c29af5685863cfc32d29da3",
+            "visibility_marker": "DEFAULT",
+            "interface_identifier": "CB_MONTH_OF_BIRTH_CB_280137ZP1"
+          },
+
+          "type": "MONTH_OF_BIRTH",
+          "value": "7",
+          "value_type": "string",
+          "created": "2016-12-20T12:35:52.956",
+          "created_by": null
+        },
+
+        "NATIONALITY":
+        {
+          "internal_handle":
+          {
+            "unique_identifier": "c97d4f6708cc7c6f036c2f06a64d57cb878a60c30c076495f73d11c91966daa1",
+            "visibility_marker": "DEFAULT",
+            "interface_identifier": "c8e3b885-8307-4165-afa6-c90489069569"
+          },
+
+          "type": "NATIONALITY",
+          "value": "USA",
+          "value_type": "string",
+          "created": "2016-12-20T12:35:52.956",
+          "created_by": null
+        },
+
+        "YEAR_OF_BIRTH":
+        {
+          "internal_handle":
+          {
+            "unique_identifier": "da2488ebc8f8899b1cfefef65fcd35cff33deefecad5ab5a35bf335aac95e362",
+            "visibility_marker": "DEFAULT",
+            "interface_identifier": "CB_YEAR_OF_BIRTH_CB_280137ZP1"
+          },
+
+          "type": "YEAR_OF_BIRTH",
+          "value": "1994",
+          "value_type": "string",
+          "created": "2016-12-20T12:35:52.956",
+          "created_by": null
+        }
+      }
+    }
+  ],
+
+  "identity_media_sets":
+  [
+    {
+      "internalHandle":
+      {
+        "unique_identifier": "76c57f5798eb80772cf9c0cc9ce829aa30bf485cfed31b6124a0fd3fcea98855",
+        "visibility_marker": "DEFAULT",
+        "interface_identifier": "IABS_EVENTS_IABS_IDENTITY_280137ZP1"
+      },
+
+      "externalHandle":
+      {
+        "unique_identifier": "IABS_EVENTS_IABS_IDENTITY_280137ZP1",
+        "handle_value": "IABS_IDENTITY_280137ZP1",
+        "handle_space": "IABS_EVENTS"
+      },
+
+      "created": "2016-12-20T12:35:52.956",
+      "createdBy": null,
+      "identityMedias":
+      [
+        {
+          "internalHandle":
+          {
+            "unique_identifier": "70010a2651ca831a44c0e431d435c11f37d8585224e184f733643ba6ca9e71e2",
+            "visibility_marker": "DEFAULT",
+            "interface_identifier": "IABS_IDENTITY_280137ZP1"
+          },
+
+          "identityMediaType": "JPG",
+          "fileHandle":
+          {
+            "unique_identifier": "70010a2651ca831a44c0e431d435c11f37d8585224e184f733643ba6ca9e71e2",
+            "visibility_marker": "DEFAULT",
+            "interface_identifier": "IABS_IDENTITY_280137ZP1"
+          },
+
+          "created": "2016-12-20T12:35:52.956",
+          "createdBy": null
+        }
+      ]
+    }
+  ]
+}

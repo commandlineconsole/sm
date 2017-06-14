@@ -1,4 +1,4 @@
-package uk.gov.ipt.mi.stream
+package uk.gov..mi.stream
 
 import java.nio.file.Files
 
@@ -12,9 +12,9 @@ import org.scalatest.concurrent.Eventually
 import org.scalatest.junit.JUnitRunner
 import org.scalatest.time.{Seconds, Span}
 import org.scalatest.{FlatSpec, GivenWhenThen, Matchers}
-import uk.gov.ipt.mi.PartitionedFilter
-import uk.gov.ipt.mi.model._
-import uk.gov.ipt.mi.stream.HashHelper.emptyHash
+import uk.gov..mi.PartitionedFilter
+import uk.gov..mi.model._
+import uk.gov..mi.stream.HashHelper.emptyHash
 
 import scala.collection.mutable
 import scala.io.Source
@@ -129,7 +129,7 @@ class PersonStreamJobTest extends FlatSpec
 
   def createPerson(interfaceIdentifier: String, identities: Set[InternalHandle]): Person = {
     Person(internal_handle = createInternalHandle(interfaceIdentifier),
-      person_space = Some("IPT"),
+      person_space = Some(""),
       created = Some("createdDate"),
       created_by = None,
       identity_handles = identities)

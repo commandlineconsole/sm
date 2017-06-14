@@ -1,4 +1,4 @@
-package uk.gov.ipt.mi.dw
+package uk.gov..mi.dw
 
 import java.io.{File, FileInputStream}
 import java.util.Properties
@@ -39,7 +39,7 @@ object JobConfig {
     val dbConfig = DbConfig(
     user = prop.getProperty("mi.vault.db.user"),
     passwd = prop.getProperty("mi.vault.db.pwd"),
-    jdbcUrl = "jdbc:postgresql://svram01.np-ii-dat1-ciz1.ipt.ho.local:5432/mi_warehouse"
+    jdbcUrl = "jdbc:postgresql://svram01.np-ii-dat1-ciz1..ho.local:5432/mi_warehouse"
     )
 
     val identityHubVaultConfig = MIIdentityHubVaultConfig(
@@ -52,7 +52,7 @@ object JobConfig {
       satIdentityRefInputPath = prop.getProperty("mi.vault.identity.sat.reference.input"),
       satIdentityCondInputPath = prop.getProperty("mi.vault.identity.sat.condition.input"),
       satIdentityBiogInputPath = prop.getProperty("mi.vault.identity.sat.biographics.input"),
-      satIdentityDescrInputPath = prop.getProperty("mi.vault.identity.sat.descriptors.input"),
+      satIdentityDescrInputPath = prop.getProperty("mi.vault.identity.sat.descrors.input"),
       satIdentityMedInputPath = prop.getProperty("mi.vault.identity.sat.medias.input"),
       lnkIdentityPerInputPath = prop.getProperty("mi.vault.lnk.identity.person.input")
     )

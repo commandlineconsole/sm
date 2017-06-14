@@ -1,4 +1,4 @@
-package uk.gov.ipt.mi.model
+package uk.gov..mi.model
 
 case class HubIdentity(message_id: String, bsn_event_datetime: Option[String], lnd_datetime: String,
                        identity_hk: String, record_source: String, identity_handle_id: String)
@@ -46,7 +46,7 @@ case class SIdentityBiographics(message_id: String, bsn_event_datetime: Option[S
                                 biographic_created_datetime: Option[String], biographic_reference_data_set: Option[String], identity_hk: String)
 
 
-case class SIdentityDescriptors(message_id: String, bsn_event_datetime: Option[String], lnd_datetime: String,
+case class SIdentityDescrors(message_id: String, bsn_event_datetime: Option[String], lnd_datetime: String,
                                 record_source: String, identity_handle_id: String, descr_superset_agg_hash: String,
                                 descr_set_handle_id: String, descr_set_rec_hash_value: String, descr_set_handle_visibility: Option[String],
                                 descr_set_ext_handle_value: Option[String], descr_set_ext_handle_space: Option[String], descr_set_created_by: Option[String],

@@ -1,13 +1,13 @@
-package uk.gov.ipt.mi.stream.identity
+package uk.gov..mi.stream.identity
 
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 import org.scalatest.{FlatSpec, Inside, Matchers}
-import uk.gov.ipt.mi.model.{Identity, MediaSet, SIdentityMedia}
-import uk.gov.ipt.mi.stream.HashHelper
-import uk.gov.ipt.mi.stream.HashHelper._
-import uk.gov.ipt.mi.stream.ModelHelper._
-import uk.gov.ipt.mi.stream.identity.IdentityHelper.basicIdentity
+import uk.gov..mi.model.{Identity, MediaSet, SIdentityMedia}
+import uk.gov..mi.stream.HashHelper
+import uk.gov..mi.stream.HashHelper._
+import uk.gov..mi.stream.ModelHelper._
+import uk.gov..mi.stream.identity.IdentityHelper.basicIdentity
 
 @RunWith(classOf[JUnitRunner])
 class IdentityMediaTransformerTest extends FlatSpec with Matchers with Inside {

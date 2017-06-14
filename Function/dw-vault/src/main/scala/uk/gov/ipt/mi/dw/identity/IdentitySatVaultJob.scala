@@ -1,13 +1,13 @@
-package uk.gov.ipt.mi.dw.identity
+package uk.gov..mi.dw.identity
 
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.slf4j.LoggerFactory
-import uk.gov.ipt.mi.dw.{DbConfig, DbHelper, MIIdentitySatVaultConfig}
+import uk.gov..mi.dw.{DbConfig, DbHelper, MIIdentitySatVaultConfig}
 import org.apache.spark.sql.AnalysisException
 import org.apache.spark.sql.types.StringType
 import org.apache.spark.sql.expressions.Window
-import uk.gov.ipt.mi.model._
+import uk.gov..mi.model._
 
 
 class IdentitySatVaultJob(batchId: String, timestampStr: String, spark: SparkSession) {
@@ -44,7 +44,7 @@ class IdentitySatVaultJob(batchId: String, timestampStr: String, spark: SparkSes
 		var idSatReferenceDF = spark.emptyDataset[SIdentityReference].toDF
 		var idSatConditionDF = spark.emptyDataset[SIdentityCondition].toDF
 		var idSatBiographicsDF = spark.emptyDataset[SIdentityBiographics].toDF
-		var idSatDescrSetDF = spark.emptyDataset[SIdentityDescriptors].toDF
+		var idSatDescrSetDF = spark.emptyDataset[SIdentityDescrors].toDF
 		var idSatMediaSetDF = spark.emptyDataset[SIdentityMedia].toDF
 
 		try {
@@ -107,7 +107,7 @@ class IdentitySatVaultJob(batchId: String, timestampStr: String, spark: SparkSes
 
 		} catch {
 			case ex: AnalysisException => {
-				idSatDescrSetDF = spark.emptyDataset[SIdentityDescriptors].toDF
+				idSatDescrSetDF = spark.emptyDataset[SIdentityDescrors].toDF
 			}
 		}
 

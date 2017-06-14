@@ -1,4 +1,4 @@
-package uk.gov.ipt.mi
+package uk.gov..mi
 
 import java.io.File
 
@@ -12,9 +12,9 @@ import org.apache.spark.streaming.{Seconds, StreamingContext, Time}
 import org.json4s.jackson.JsonMethods._
 import org.json4s.{DefaultFormats, _}
 import org.slf4j.LoggerFactory
-import uk.gov.ipt.mi.model.servicedelivery.ServiceDelivery
-import uk.gov.ipt.mi.model.{Identity, Person}
-import uk.gov.ipt.mi.stream._
+import uk.gov..mi.model.servicedelivery.ServiceDelivery
+import uk.gov..mi.model.{Identity, Person}
+import uk.gov..mi.stream._
 
 import scala.util.{Failure, Success, Try}
 

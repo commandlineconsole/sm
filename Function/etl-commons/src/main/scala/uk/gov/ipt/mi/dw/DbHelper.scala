@@ -1,4 +1,4 @@
-package uk.gov.ipt.mi.dw
+package uk.gov..mi.dw
 
 import java.util.Properties
 import org.apache.spark.sql.{DataFrame, SparkSession}

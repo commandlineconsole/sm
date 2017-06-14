@@ -1,4 +1,4 @@
-package uk.gov.ipt.mi.stream
+package uk.gov..mi.stream
 
 import java.io.{File, FileInputStream}
 import java.util.Properties
@@ -29,7 +29,7 @@ case class MIStreamIdentityConfig(inputTopic: String, hubIdentityPath: String,
                                   sIdentityReferencePath: String,
                                   sIdentityConditionPath: String,
                                   sIdentityBiographicsPath: String,
-                                  sIdentityDescriptorsPath: String,
+                                  sIdentityDescrorsPath: String,
                                   sIdentityMediasPath: String,
                                   sIdentityLinkPersonPath: String
                                  )
@@ -57,7 +57,7 @@ object JobConfig {
       sIdentityReferencePath = prop.getProperty("mi.stream.identityStream.satellite.identityReference"),
       sIdentityConditionPath = prop.getProperty("mi.stream.identityStream.satellite.identityCondition"),
       sIdentityBiographicsPath = prop.getProperty("mi.stream.identityStream.satellite.identityBiographics"),
-      sIdentityDescriptorsPath = prop.getProperty("mi.stream.identityStream.satellite.identityDescriptors"),
+      sIdentityDescrorsPath = prop.getProperty("mi.stream.identityStream.satellite.identityDescrors"),
       sIdentityMediasPath = prop.getProperty("mi.stream.identityStream.satellite.identityMedias"),
       sIdentityLinkPersonPath = prop.getProperty("mi.stream.identityStream.link.identityPerson")
     )

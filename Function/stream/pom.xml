@@ -3,25 +3,25 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>ipt-mi-etl</artifactId>
-        <groupId>uk.gov.ipt</groupId>
+        <artifactId>etl</artifactId>
+        <groupId>uk.gov.</groupId>
         <version>1.126-SNAPSHOT</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ipt-mi-stream</artifactId>
+    <artifactId>stream</artifactId>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>uk.gov.ipt</groupId>
-                <artifactId>ipt-mi-etl-commons</artifactId>
+                <groupId>uk.gov.</groupId>
+                <artifactId>etl-commons</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>uk.gov.ipt</groupId>
-                <artifactId>ipt-mi-etl-commons</artifactId>
+                <groupId>uk.gov.</groupId>
+                <artifactId>etl-commons</artifactId>
                 <version>${project.version}</version>
                 <type>test-jar</type>
                 <scope>test</scope>
@@ -31,8 +31,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>uk.gov.ipt</groupId>
-            <artifactId>ipt-mi-etl-commons</artifactId>
+            <groupId>uk.gov.</groupId>
+            <artifactId>etl-commons</artifactId>
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
@@ -69,8 +69,8 @@
 
         <!-- Test -->
         <dependency>
-            <groupId>uk.gov.ipt</groupId>
-            <artifactId>ipt-mi-etl-commons</artifactId>
+            <groupId>uk.gov.</groupId>
+            <artifactId>etl-commons</artifactId>
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>

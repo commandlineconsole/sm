@@ -1,16 +1,16 @@
-package uk.gov.ipt.mi.stream.identity
+package uk.gov..mi.stream.identity
 
 import org.joda.time.format.ISODateTimeFormat
 import org.joda.time.{DateTime, DateTimeZone}
-import uk.gov.ipt.mi.model.{Identity, IdentityCondition, SIdentityCondition}
-import uk.gov.ipt.mi.stream.HashHelper
-import uk.gov.ipt.mi.stream.HashHelper.sha1
+import uk.gov..mi.model.{Identity, IdentityCondition, SIdentityCondition}
+import uk.gov..mi.stream.HashHelper
+import uk.gov..mi.stream.HashHelper.sha1
 
 
 object IdentityConditionTransformer {
 
   def identityCondition(messageId: String, identity: Identity, timestamp: Long): List[SIdentityCondition] = {
-    val source = "IPT"
+    val source = ""
     val fmt = ISODateTimeFormat.dateTime()
     val time = new DateTime(timestamp, DateTimeZone.UTC)
 

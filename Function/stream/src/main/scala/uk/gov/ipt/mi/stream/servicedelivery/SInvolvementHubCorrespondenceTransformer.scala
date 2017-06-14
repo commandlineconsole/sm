@@ -1,16 +1,16 @@
-package uk.gov.ipt.mi.stream.servicedelivery
+package uk.gov..mi.stream.servicedelivery
 
 import org.joda.time.format.ISODateTimeFormat
 import org.joda.time.{DateTime, DateTimeZone}
-import uk.gov.ipt.mi.DateHelper
-import uk.gov.ipt.mi.model.HubCorrespondence
-import uk.gov.ipt.mi.model.servicedelivery.{Correspondence, ServiceDelivery}
-import uk.gov.ipt.mi.stream.HashHelper
+import uk.gov..mi.DateHelper
+import uk.gov..mi.model.HubCorrespondence
+import uk.gov..mi.model.servicedelivery.{Correspondence, ServiceDelivery}
+import uk.gov..mi.stream.HashHelper
 
 object SInvolvementHubCorrespondenceTransformer {
 
   def hubCorrespondence(messageId: String, serviceDelivery: ServiceDelivery, timestamp: Long): List[HubCorrespondence] = {
-    val source = "IPT"
+    val source = ""
     val fmt = ISODateTimeFormat.dateTime()
     val time = new DateTime(timestamp, DateTimeZone.UTC)
 

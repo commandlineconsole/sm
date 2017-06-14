@@ -1,16 +1,16 @@
-package uk.gov.ipt.mi.stream.identity
+package uk.gov..mi.stream.identity
 
 import org.joda.time.format.ISODateTimeFormat
 import org.joda.time.{DateTime, DateTimeZone}
-import uk.gov.ipt.mi.model.{Biographic, BiographicSet, Identity, SIdentityBiographics}
-import uk.gov.ipt.mi.stream.HashHelper
-import uk.gov.ipt.mi.stream.HashHelper.sha1
+import uk.gov..mi.model.{Biographic, BiographicSet, Identity, SIdentityBiographics}
+import uk.gov..mi.stream.HashHelper
+import uk.gov..mi.stream.HashHelper.sha1
 
 
 object IdentityBiographicTransformer {
 
   def identityBiographics(biographicSets: Option[Set[BiographicSet]], messageId: String, identity: Identity, timestamp: Long): List[SIdentityBiographics] = {
-    val source = "IPT"
+    val source = ""
     val fmt = ISODateTimeFormat.dateTime()
     val time = new DateTime(timestamp, DateTimeZone.UTC)
     val biog_superset_agg_hash = superSetHash(biographicSets)

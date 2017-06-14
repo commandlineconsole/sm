@@ -1,12 +1,12 @@
-package uk.gov.ipt.mi.stream
+package uk.gov..mi.stream
 
 import org.apache.spark.streaming.dstream.DStream
 import org.joda.time.format.ISODateTimeFormat
 import org.joda.time.{DateTime, DateTimeZone}
-import uk.gov.ipt.mi.model._
-import uk.gov.ipt.mi.stream.HashHelper.sha1
-import uk.gov.ipt.mi.stream.RDDHelper._
-import uk.gov.ipt.mi.stream.identity._
+import uk.gov..mi.model._
+import uk.gov..mi.stream.HashHelper.sha1
+import uk.gov..mi.stream.RDDHelper._
+import uk.gov..mi.stream.identity._
 
 
 class IdentityStreamJob() {
@@ -19,14 +19,14 @@ class IdentityStreamJob() {
     streamSIdentityReference(identityStream, identityConfig.sIdentityReferencePath)
     streamSIdentityCondition(identityStream, identityConfig.sIdentityConditionPath)
     streamSIdentityBiographics(identityStream, identityConfig.sIdentityBiographicsPath)
-    streamSIdentityDescriptors(identityStream, identityConfig.sIdentityDescriptorsPath)
+    streamSIdentityDescrors(identityStream, identityConfig.sIdentityDescrorsPath)
     streamSIdentityMedias(identityStream, identityConfig.sIdentityMediasPath)
     streamSIdentityLinkPerson(identityStream, identityConfig.sIdentityLinkPersonPath)
   }
 
   def streamHubIdentity(identityStream: DStream[(String, Identity, Long)], basePath: String): Unit = {
     identityStream.map { case (messageId: String, identity: Identity, timestamp: Long) =>
-      val source = "IPT"
+      val source = ""
       val fmt = ISODateTimeFormat.dateTime()
       val time = new DateTime(timestamp, DateTimeZone.UTC)
 
@@ -70,10 +70,10 @@ class IdentityStreamJob() {
     }.savePartition(basePath)
   }
 
-  def streamSIdentityDescriptors(identityStream: DStream[(String, Identity, Long)], basePath: String): Unit = {
+  def streamSIdentityDescrors(identityStream: DStream[(String, Identity, Long)], basePath: String): Unit = {
     identityStream.flatMap {
       case (messageId: String, identity: Identity, timestamp: Long) =>
-        IdentityDescriptionTransformer.identityDescriptors(identity.descriptions, messageId, identity, timestamp)
+        IdentityDescrionTransformer.identityDescrors(identity.descrions, messageId, identity, timestamp)
     }.savePartition(basePath)
   }
 
@@ -87,7 +87,7 @@ class IdentityStreamJob() {
   def streamSIdentityLinkPerson(identityStream: DStream[(String, Identity, Long)], basePath: String): Unit = {
     identityStream.flatMap {
       case (messageId: String, identity: Identity, timestamp: Long) =>
-        val source = "IPT"
+        val source = ""
         val fmt = ISODateTimeFormat.dateTime()
         val time = new DateTime(timestamp, DateTimeZone.UTC)
         val identity_hk = HashHelper.sha1(Seq(

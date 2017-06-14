@@ -1,13 +1,13 @@
-package uk.gov.ipt.mi.stream.identity
+package uk.gov..mi.stream.identity
 
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 import org.scalatest.{FlatSpec, Inside, Matchers}
-import uk.gov.ipt.mi.model._
-import uk.gov.ipt.mi.stream.HashHelper
-import uk.gov.ipt.mi.stream.HashHelper.emptyHash
-import uk.gov.ipt.mi.stream.ModelHelper._
-import uk.gov.ipt.mi.stream.identity.IdentityHelper._
+import uk.gov..mi.model._
+import uk.gov..mi.stream.HashHelper
+import uk.gov..mi.stream.HashHelper.emptyHash
+import uk.gov..mi.stream.ModelHelper._
+import uk.gov..mi.stream.identity.IdentityHelper._
 
 
 @RunWith(classOf[JUnitRunner])

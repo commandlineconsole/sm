@@ -1,18 +1,18 @@
-package uk.gov.ipt.mi.stream.servicedelivery
+package uk.gov..mi.stream.servicedelivery
 
 import org.joda.time.{DateTime, DateTimeZone}
 import org.joda.time.format.ISODateTimeFormat
-import uk.gov.ipt.mi.DateHelper
-import uk.gov.ipt.mi.model.SServiceDeliveryDocAttachmentInfo
-import uk.gov.ipt.mi.model.servicedelivery.{DocumentAttachment, ServiceDelivery}
-import uk.gov.ipt.mi.stream.HashHelper
-import uk.gov.ipt.mi.stream.HashHelper._
+import uk.gov..mi.DateHelper
+import uk.gov..mi.model.SServiceDeliveryDocAttachmentInfo
+import uk.gov..mi.model.servicedelivery.{DocumentAttachment, ServiceDelivery}
+import uk.gov..mi.stream.HashHelper
+import uk.gov..mi.stream.HashHelper._
 
 
 object ServiceDeliveryDocAttachmentInfo {
 
   def docAttachmentInfos(messageId: String, serviceDelivery: ServiceDelivery, timestamp: Long): List[SServiceDeliveryDocAttachmentInfo] = {
-    val source = "IPT"
+    val source = ""
     val fmt = ISODateTimeFormat.dateTime()
     val time = new DateTime(timestamp, DateTimeZone.UTC)
 
@@ -30,7 +30,7 @@ object ServiceDeliveryDocAttachmentInfo {
       SServiceDeliveryDocAttachmentInfo(messageId, DateHelper.getMostRecentDate(List(serviceDelivery.created, serviceDelivery.createdDate, serviceDelivery.lastUpdated)), fmt.print(time),
         source, serviceDelivery.internalHandle.interface_identifier, "",
         docAttachment.internalHandle.interface_identifier, main_rec_hash_value, docAttachment.internalHandle.visibility_marker,
-        docAttachment.attachmentType.refDataValueCode, docAttachment.externalReference, docAttachment.description,
+        docAttachment.attachmentType.refDataValueCode, docAttachment.externalReference, docAttachment.descrion,
         docAttachment.documentStoreId, docAttachment.mimeType.refDataValueCode, docAttachment.recordDate,
         docAttachment.provider.refDataValueCode, docAttachment.verified, docAttachment.stageCode,
         chlg_rec_hash_value, docAttachment.createdBy, docAttachment.created,

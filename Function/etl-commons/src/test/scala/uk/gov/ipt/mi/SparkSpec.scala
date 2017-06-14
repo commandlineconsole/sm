@@ -1,4 +1,4 @@
-package uk.gov.ipt.mi
+package uk.gov..mi
 
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.{SQLContext, SparkSession}

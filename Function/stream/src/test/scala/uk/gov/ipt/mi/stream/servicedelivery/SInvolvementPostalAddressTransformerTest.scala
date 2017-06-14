@@ -1,7 +1,7 @@
-package uk.gov.ipt.mi.stream.servicedelivery
+package uk.gov..mi.stream.servicedelivery
 
 import org.scalatest.{Inside, Matchers, FlatSpec}
-import uk.gov.ipt.mi.stream.HashHelper
+import uk.gov..mi.stream.HashHelper
 
 class SInvolvementPostalAddressTransformerTest extends FlatSpec with Matchers with Inside {
 

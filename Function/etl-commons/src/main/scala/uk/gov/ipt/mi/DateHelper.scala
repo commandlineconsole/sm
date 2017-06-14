@@ -1,4 +1,4 @@
-package uk.gov.ipt.mi
+package uk.gov..mi
 
 import org.joda.time.DateTime
 import org.joda.time.format.ISODateTimeFormat

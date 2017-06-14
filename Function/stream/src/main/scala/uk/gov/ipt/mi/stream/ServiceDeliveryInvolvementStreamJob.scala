@@ -1,8 +1,8 @@
-package uk.gov.ipt.mi.stream
+package uk.gov..mi.stream
 
 import org.apache.spark.streaming.dstream.DStream
-import uk.gov.ipt.mi.model.servicedelivery.ServiceDelivery
-import uk.gov.ipt.mi.stream.servicedelivery._
+import uk.gov..mi.model.servicedelivery.ServiceDelivery
+import uk.gov..mi.stream.servicedelivery._
 import RDDHelper._
 
 class ServiceDeliveryInvolvementStreamJob {

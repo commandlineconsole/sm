@@ -1,11 +1,11 @@
-package uk.gov.ipt.mi.stream
+package uk.gov..mi.stream
 
 import java.io.File
 
 import org.apache.spark.streaming.{Duration, Seconds, StreamingContext}
 import org.scalatest.Suite
 import org.apache.spark.streaming.ClockWrapper
-import uk.gov.ipt.mi.SparkSpec
+import uk.gov..mi.SparkSpec
 
 trait SparkStreamingSpec extends SparkSpec {
   this: Suite =>

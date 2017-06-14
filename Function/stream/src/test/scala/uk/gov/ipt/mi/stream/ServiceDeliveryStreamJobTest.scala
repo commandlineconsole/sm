@@ -1,4 +1,4 @@
-package uk.gov.ipt.mi.stream
+package uk.gov..mi.stream
 
 import java.nio.file.Files
 
@@ -12,11 +12,11 @@ import org.scalatest.concurrent.Eventually
 import org.scalatest.{FlatSpec, GivenWhenThen, Inside, Matchers}
 import org.scalatest.junit.JUnitRunner
 import org.scalatest.time.{Seconds, Span}
-import uk.gov.ipt.mi.PartitionedFilter
-import uk.gov.ipt.mi.model._
-import uk.gov.ipt.mi.model.servicedelivery.{DocumentAttachment, ProcessInstance, ServiceDelivery, ServiceDeliveryProcess}
-import uk.gov.ipt.mi.stream.HashHelper.emptyHash
-import uk.gov.ipt.mi.stream.servicedelivery.ServiceDeliveryHelper
+import uk.gov..mi.PartitionedFilter
+import uk.gov..mi.model._
+import uk.gov..mi.model.servicedelivery.{DocumentAttachment, ProcessInstance, ServiceDelivery, ServiceDeliveryProcess}
+import uk.gov..mi.stream.HashHelper.emptyHash
+import uk.gov..mi.stream.servicedelivery.ServiceDeliveryHelper
 
 import scala.collection.mutable
 import scala.io.Source
@@ -315,7 +315,7 @@ class ServiceDeliveryStreamJobTest extends FlatSpec
         doc_atchmnt_handle_visibility should equal(expectedDoc.internalHandle.visibility_marker)
         doc_atchmnt_type_cd should equal(expectedDoc.attachmentType.refDataValueCode)
         doc_atchmnt_external_ref should equal(expectedDoc.externalReference)
-        doc_atchmnt_desc should equal(expectedDoc.description)
+        doc_atchmnt_desc should equal(expectedDoc.descrion)
         doc_atchmnt_doc_store_id should equal(expectedDoc.documentStoreId)
         doc_atchmnt_mime_type_cd should equal(expectedDoc.mimeType.refDataValueCode)
         doc_atchmnt_record_datetime should equal(expectedDoc.recordDate)

@@ -1,8 +1,8 @@
-package uk.gov.ipt.mi.model.servicedelivery
+package uk.gov..mi.model.servicedelivery
 
 import org.joda.time.DateTime
 import org.joda.time.format.ISODateTimeFormat
-import uk.gov.ipt.mi.model.InternalHandle
+import uk.gov..mi.model.InternalHandle
 import scala.Option.empty
 
 case class ReferenceDataElement(code: String, id: Long)
@@ -22,7 +22,7 @@ case class Biographic(internalHandle: Option[InternalHandle], biographicType: St
   def compare(that: Biographic): Int = (this.internalHandle.map(_.interface_identifier), this.biographicType, this.biographicValue) compare(that.internalHandle.map(_.interface_identifier), that.biographicType, that.biographicValue)
 }
 
-case class ReferenceData(code: String, shortDescription: String, longDescription: String)
+case class ReferenceData(code: String, shortDescrion: String, longDescrion: String)
 
 case class DefaultBiographics(identityHandle: InternalHandle, title: ReferenceData, language: ReferenceData,
                               givenName: String, familyName: String, fullName: String,
@@ -53,7 +53,7 @@ case class DocumentAttachment(internalHandle: InternalHandle, attachmentType: Se
                               documentStoreId: String, mimeType: ServiceDeliveryRefData, provider: ServiceDeliveryRefData,
                               verified: Boolean, stageCode: String, created: Option[String],
                               createdBy: Option[String], lastUpdated: Option[String], lastUpdatedBy: Option[String],
-                              description: Option[String], recordDate:Option[String],correspondences:Option[List[Correspondence]]) extends Ordered[DocumentAttachment]{
+                              descrion: Option[String], recordDate:Option[String],correspondences:Option[List[Correspondence]]) extends Ordered[DocumentAttachment]{
 
   import scala.math.Ordered.orderingToOrdered
 

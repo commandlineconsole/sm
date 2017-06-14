@@ -1,18 +1,18 @@
-package uk.gov.ipt.mi.stream.servicedelivery
+package uk.gov..mi.stream.servicedelivery
 
 import org.joda.time.format.ISODateTimeFormat
 import org.joda.time.{DateTime, DateTimeZone}
-import uk.gov.ipt.mi.DateHelper
-import uk.gov.ipt.mi.model.SServiceDeliveryAttribute
-import uk.gov.ipt.mi.model.servicedelivery.{ServiceDelivery, ServiceDeliveryAttribute}
-import uk.gov.ipt.mi.stream.HashHelper
-import uk.gov.ipt.mi.stream.HashHelper._
+import uk.gov..mi.DateHelper
+import uk.gov..mi.model.SServiceDeliveryAttribute
+import uk.gov..mi.model.servicedelivery.{ServiceDelivery, ServiceDeliveryAttribute}
+import uk.gov..mi.stream.HashHelper
+import uk.gov..mi.stream.HashHelper._
 
 
 object ServiceDeliveryAttributeTransformer {
 
   def attributes(messageId: String, serviceDelivery: ServiceDelivery, timestamp: Long): List[SServiceDeliveryAttribute] = {
-    val source = "IPT"
+    val source = ""
     val fmt = ISODateTimeFormat.dateTime()
     val time = new DateTime(timestamp, DateTimeZone.UTC)
 

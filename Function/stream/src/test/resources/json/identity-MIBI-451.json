@@ -3,8 +3,8 @@
     {
       "biographic_set_purpose": {
         "code": "CB",
-        "longDescription": "CORE BIOGRAPHICS",
-        "shortDescription": "CORE BIOGRAPHICS"
+        "longDescrion": "CORE BIOGRAPHICS",
+        "shortDescrion": "CORE BIOGRAPHICS"
       },
       "biographics": {
         "DATE_OF_BIRTH": {
@@ -185,8 +185,8 @@
     {
       "biographic_set_purpose": {
         "code": "AKA",
-        "longDescription": "Also known as",
-        "shortDescription": "Also known as"
+        "longDescrion": "Also known as",
+        "shortDescrion": "Also known as"
       },
       "biographics": {
         "FULL_NAME": {
@@ -237,8 +237,8 @@
       "conditionNote": "SERIOUS OFFENDER\nNew Special Condition: Updated",
       "conditionType": {
         "code": "AL_CRIME",
-        "longDescription": "Alleged Criminality",
-        "shortDescription": "Alleged Criminality"
+        "longDescrion": "Alleged Criminality",
+        "shortDescrion": "Alleged Criminality"
       },
       "conditionUpdateDate": "2016-12-20T10:17:14.751Z",
       "created": "2016-12-20T10:17:14.741046",
@@ -261,8 +261,8 @@
       "conditionNote": "New Person Note: Updated",
       "conditionType": {
         "code": "PERNOTE",
-        "longDescription": "Specific notes against a person",
-        "shortDescription": "Person Note"
+        "longDescrion": "Specific notes against a person",
+        "shortDescrion": "Person Note"
       },
       "conditionUpdateDate": "2016-12-20T10:17:12.237Z",
       "created": "2016-12-20T10:17:12.228278",
@@ -287,7 +287,7 @@
   },
   "created": "2016-12-20T10:17:09.711967",
   "created_by": null,
-  "descriptions": [],
+  "descrions": [],
   "external_handle": {
     "handle_space": "CID_PEOPLE",
     "handle_value": "279377",
@@ -315,8 +315,8 @@
       },
       "referenceType": {
         "code": "PASSPORT",
-        "longDescription": "Passport",
-        "shortDescription": "Passport"
+        "longDescrion": "Passport",
+        "shortDescrion": "Passport"
       },
       "referenceValue": "112233"
     }

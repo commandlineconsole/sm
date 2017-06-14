@@ -1,4 +1,4 @@
-package uk.gov.ipt.mi
+package uk.gov..mi
 
 import java.io.{File, FilenameFilter}
 

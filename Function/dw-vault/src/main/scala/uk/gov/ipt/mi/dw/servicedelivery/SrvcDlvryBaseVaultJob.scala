@@ -1,4 +1,4 @@
-package uk.gov.ipt.mi.dw.servicedelivery
+package uk.gov..mi.dw.servicedelivery
 
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.apache.spark.sql.functions._
@@ -9,8 +9,8 @@ import scala.collection.mutable.Map
 
 import org.slf4j.LoggerFactory
 
-import uk.gov.ipt.mi.dw.{DbConfig, DbHelper, MISrvcDlvryHubVaultConfig, MISrvcDlvrySatVaultConfig}
-import uk.gov.ipt.mi.model._
+import uk.gov..mi.dw.{DbConfig, DbHelper, MISrvcDlvryHubVaultConfig, MISrvcDlvrySatVaultConfig}
+import uk.gov..mi.model._
 
 
 class SrvcDlvryBaseVaultJob(batchId: String, timestampStr: String, spark: SparkSession) {

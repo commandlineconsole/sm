@@ -1,14 +1,14 @@
-package uk.gov.ipt.mi.dw
+package uk.gov..mi.dw
 
 import java.io.File
 
 import org.apache.spark.SparkConf
 import org.apache.spark.sql.SparkSession
 import org.slf4j.LoggerFactory
-import uk.gov.ipt.mi.dw.person.PersonVaultJob
-import uk.gov.ipt.mi.dw.identity.IdentityHubVaultJob
-import uk.gov.ipt.mi.dw.identity.IdentitySatVaultJob
-import uk.gov.ipt.mi.dw.servicedelivery.SrvcDlvryBaseVaultJob
+import uk.gov..mi.dw.person.PersonVaultJob
+import uk.gov..mi.dw.identity.IdentityHubVaultJob
+import uk.gov..mi.dw.identity.IdentitySatVaultJob
+import uk.gov..mi.dw.servicedelivery.SrvcDlvryBaseVaultJob
 
 import java.util.Date;
 import java.text.SimpleDateFormat;

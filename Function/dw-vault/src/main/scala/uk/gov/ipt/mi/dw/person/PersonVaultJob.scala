@@ -1,11 +1,11 @@
-package uk.gov.ipt.mi.dw.person
+package uk.gov..mi.dw.person
 
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SparkSession}
-import uk.gov.ipt.mi.dw.{DbConfig, DbHelper, MIPersonVaultConfig, MIIdentityHubVaultConfig}
+import uk.gov..mi.dw.{DbConfig, DbHelper, MIPersonVaultConfig, MIIdentityHubVaultConfig}
 import org.apache.spark.sql.AnalysisException
 import org.apache.spark.sql.types.StringType
-import uk.gov.ipt.mi.model._
+import uk.gov..mi.model._
 class PersonVaultJob(batchId: String, timestampStr: String, spark: SparkSession) {
 
 	def start(dbConfig: DbConfig, personVaultConfig: MIPersonVaultConfig): Unit = {

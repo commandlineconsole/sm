@@ -1,16 +1,16 @@
-package uk.gov.ipt.mi.stream.identity
+package uk.gov..mi.stream.identity
 
 import org.joda.time.format.ISODateTimeFormat
 import org.joda.time.{DateTime, DateTimeZone}
-import uk.gov.ipt.mi.model.{Identity, IdentityMedia, MediaSet, SIdentityMedia}
-import uk.gov.ipt.mi.stream.HashHelper
-import uk.gov.ipt.mi.stream.HashHelper._
+import uk.gov..mi.model.{Identity, IdentityMedia, MediaSet, SIdentityMedia}
+import uk.gov..mi.stream.HashHelper
+import uk.gov..mi.stream.HashHelper._
 
 
 object IdentityMediaTransformer {
 
   def identityMedias(mediaSets: Option[Set[MediaSet]], messageId: String, identity: Identity, timestamp: Long): List[SIdentityMedia] = {
-    val source = "IPT"
+    val source = ""
     val fmt = ISODateTimeFormat.dateTime()
     val time = new DateTime(timestamp, DateTimeZone.UTC)
 

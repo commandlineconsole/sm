@@ -1,10 +1,10 @@
-package uk.gov.ipt.mi
+package uk.gov..mi
 
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 import org.scalatest.{FunSuite, Inside, Matchers}
-import uk.gov.ipt.mi.model._
-import uk.gov.ipt.mi.model.servicedelivery.ServiceDelivery
+import uk.gov..mi.model._
+import uk.gov..mi.model.servicedelivery.ServiceDelivery
 
 
 @RunWith(classOf[JUnitRunner])
@@ -17,7 +17,7 @@ class SerialisationSuite extends FunSuite with Matchers with Inside {
        |    "visibility_marker": "DEFAULT",
        |    "interface_identifier": "CID_PEOPLE_102154"
        |  },
-       |  "person_space": "IPT",
+       |  "person_space": "",
        |  "created": "2016-09-27T14:09:38.473656",
        |  "created_by": null,
        |  "identity_handles": [
@@ -43,7 +43,7 @@ class SerialisationSuite extends FunSuite with Matchers with Inside {
     val person = parse(personJson).extract[Person]
     person.internal_handle.visibility_marker should be(Some("DEFAULT"))
     person.identity_handles.size should be(2)
-    person.person_space should be(Some("IPT"))
+    person.person_space should be(Some(""))
   }
 
   test("Identity serialisation should accept snake cases") {
@@ -121,7 +121,7 @@ class SerialisationSuite extends FunSuite with Matchers with Inside {
     serviceDelivery.involvements should have size 2
     serviceDelivery.involvements.filter(_.person.isDefined) should have size 1
     inside(serviceDelivery.involvements.map(_.person).head) {
-      case Some(uk.gov.ipt.mi.model.servicedelivery.Person(personId, recentBiographics, _,_, _)) =>
+      case Some(uk.gov..mi.model.servicedelivery.Person(personId, recentBiographics, _,_, _)) =>
         personId should equal("CRS_NAMED_PERSON_50_323756")
         recentBiographics shouldBe empty
     }

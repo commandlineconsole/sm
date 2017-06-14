@@ -1,11 +1,11 @@
-package uk.gov.ipt.mi.stream.servicedelivery
+package uk.gov..mi.stream.servicedelivery
 
 import org.junit.runner.RunWith
 import org.scalatest.{Inside, Matchers, FlatSpec}
 import org.scalatest.junit.JUnitRunner
-import uk.gov.ipt.mi.model.SServiceDeliveryDocAttachmentInfo
-import uk.gov.ipt.mi.model.servicedelivery.DocumentAttachment
-import uk.gov.ipt.mi.stream.HashHelper
+import uk.gov..mi.model.SServiceDeliveryDocAttachmentInfo
+import uk.gov..mi.model.servicedelivery.DocumentAttachment
+import uk.gov..mi.stream.HashHelper
 
 @RunWith(classOf[JUnitRunner])
 class ServiceDeliveryDocAttachmentInfoTest extends FlatSpec with Matchers with Inside {
@@ -36,7 +36,7 @@ class ServiceDeliveryDocAttachmentInfoTest extends FlatSpec with Matchers with I
         doc_atchmnt_handle_visibility should equal(expectedDoc.internalHandle.visibility_marker)
         doc_atchmnt_type_cd should equal(expectedDoc.attachmentType.refDataValueCode)
         doc_atchmnt_external_ref should equal(expectedDoc.externalReference)
-        doc_atchmnt_desc should equal(expectedDoc.description)
+        doc_atchmnt_desc should equal(expectedDoc.descrion)
         doc_atchmnt_doc_store_id should equal(expectedDoc.documentStoreId)
         doc_atchmnt_mime_type_cd should equal(expectedDoc.mimeType.refDataValueCode)
         doc_atchmnt_record_datetime should equal(expectedDoc.recordDate)

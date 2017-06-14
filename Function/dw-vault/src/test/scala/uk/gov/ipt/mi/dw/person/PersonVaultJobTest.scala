@@ -1,4 +1,4 @@
-package uk.gov.ipt.mi.dw.person
+package uk.gov..mi.dw.person
 
 import org.apache.spark.sql.Row
 import org.junit.runner.RunWith
@@ -6,9 +6,9 @@ import org.scalatest.concurrent.Eventually
 import org.scalatest.junit.JUnitRunner
 import org.scalatest.time.{Seconds, Span}
 import org.scalatest.{FlatSpec, GivenWhenThen, Matchers}
-import uk.gov.ipt.mi.SparkSpec
-import uk.gov.ipt.mi.model.HubPerson
-import uk.gov.ipt.mi.dw.{DbConfig, DbHelper, MIPersonVaultConfig}
+import uk.gov..mi.SparkSpec
+import uk.gov..mi.model.HubPerson
+import uk.gov..mi.dw.{DbConfig, DbHelper, MIPersonVaultConfig}
 import java.io.{File, FileInputStream}
 import java.util.Properties
 
@@ -25,7 +25,7 @@ class PersonVaultJobTest extends FlatSpec with SparkSpec with GivenWhenThen with
     Given("Incoming person read from JSON")
     val incomingPerson = spark.createDataFrame(Seq(HubPerson(
       "messageId1", Some("event_datetime"), "LandingTime",
-      "hash1", "IPT", "handle1")))
+      "hash1", "", "handle1")))
 
     When("current person is empty")
     val currentPersonHub = spark.createDataFrame(spark.sparkContext.emptyRDD[Row], classOf[TableHubPerson])
@@ -40,7 +40,7 @@ class PersonVaultJobTest extends FlatSpec with SparkSpec with GivenWhenThen with
 
     mergedDF.show()
 
-	rows should equal(Array(Row("hash1", "event_datetime", "IPT", "handle1", "batchId", "aTimestampStr")))	
+	rows should equal(Array(Row("hash1", "event_datetime", "", "handle1", "batchId", "aTimestampStr")))
 */	
   }
 

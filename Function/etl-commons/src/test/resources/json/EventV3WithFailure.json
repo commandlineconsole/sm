@@ -24,9 +24,9 @@
     "PAYLOAD_TYPE": {
       "value": "THREAT_HARM_EVENT",
       "value_type": "string",
-      "description": "Payload Type",
+      "descrion": "Payload Type",
       "group_id": null,
-      "group_type": "uk.gov.ipt.eventhistory.domain.PayloadType",
+      "group_type": "uk.gov..eventhistory.domain.PayloadType",
       "data_type": "String",
       "association_id": null,
       "association_type": null

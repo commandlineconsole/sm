@@ -1,16 +1,16 @@
-package uk.gov.ipt.mi.stream.identity
+package uk.gov..mi.stream.identity
 
 import org.joda.time.format.ISODateTimeFormat
 import org.joda.time.{DateTime, DateTimeZone}
-import uk.gov.ipt.mi.model.{Biometric, Identity, SIdentityBiometricInfo}
-import uk.gov.ipt.mi.stream.HashHelper
-import uk.gov.ipt.mi.stream.HashHelper.sha1
+import uk.gov..mi.model.{Biometric, Identity, SIdentityBiometricInfo}
+import uk.gov..mi.stream.HashHelper
+import uk.gov..mi.stream.HashHelper.sha1
 
 
 object IdentityBiometricTransformer {
 
   def identityBiometric(messageId: String, identity: Identity, timestamp: Long): List[SIdentityBiometricInfo] = {
-    val source = "IPT"
+    val source = ""
     val fmt = ISODateTimeFormat.dateTime()
     val time = new DateTime(timestamp, DateTimeZone.UTC)
     val collectionStr = biometricSetAggStr(identity)

@@ -1,4 +1,4 @@
-package uk.gov.ipt.mi.model
+package uk.gov..mi.model
 
 case class InternalHandle(interface_identifier: String, unique_identifier: String, visibility_marker: Option[String])
 
@@ -7,11 +7,11 @@ case class ExternalHandle(unique_identifier: String, handle_value: Option[String
 case class Person(internal_handle: InternalHandle, person_space: Option[String], created: Option[String],
                   created_by: Option[String], identity_handles: Set[InternalHandle])
 
-case class ReferenceType(code: Option[String], shortDescription: Option[String], longDescription: Option[String]) extends Ordered[ReferenceType] {
+case class ReferenceType(code: Option[String], shortDescrion: Option[String], longDescrion: Option[String]) extends Ordered[ReferenceType] {
 
   import scala.math.Ordered.orderingToOrdered
 
-  def compare(that: ReferenceType): Int = (this.code, this.shortDescription, this.longDescription) compare(that.code, that.shortDescription, that.longDescription)
+  def compare(that: ReferenceType): Int = (this.code, this.shortDescrion, this.longDescrion) compare(that.code, that.shortDescrion, that.longDescrion)
 }
 
 case class Biographic(internal_handle: InternalHandle, `type`: Option[String], value: Option[String], value_type: Option[String],
@@ -47,18 +47,18 @@ case class IdentityCondition(internalHandle: InternalHandle, externalHandle: Opt
 
 }
 
-case class Descriptor(internalHandle: InternalHandle, descriptorType: Option[String], descriptorValue: Option[String], created: Option[String],
-                      createdBy: Option[String]) extends Ordered[Descriptor] {
+case class Descror(internalHandle: InternalHandle, descrorType: Option[String], descrorValue: Option[String], created: Option[String],
+                      createdBy: Option[String]) extends Ordered[Descror] {
 
   import scala.math.Ordered.orderingToOrdered
 
-  def compare(that: Descriptor): Int = (this.internalHandle.interface_identifier, this.descriptorType, this.descriptorValue) compare(that.internalHandle.interface_identifier, that.descriptorType, that.descriptorValue)
+  def compare(that: Descror): Int = (this.internalHandle.interface_identifier, this.descrorType, this.descrorValue) compare(that.internalHandle.interface_identifier, that.descrorType, that.descrorValue)
 }
 
-case class Description(internalHandle: InternalHandle, externalHandle: Option[ExternalHandle], created: Option[String], createdBy: Option[String],
-                       descriptors: Option[Set[Descriptor]]) extends Ordered[Description] {
+case class Descrion(internalHandle: InternalHandle, externalHandle: Option[ExternalHandle], created: Option[String], createdBy: Option[String],
+                       descrors: Option[Set[Descror]]) extends Ordered[Descrion] {
 
-  def compare(that: Description): Int = (this.internalHandle.interface_identifier) compare (that.internalHandle.interface_identifier)
+  def compare(that: Descrion): Int = (this.internalHandle.interface_identifier) compare (that.internalHandle.interface_identifier)
 }
 
 case class Reference(internalHandle: InternalHandle, externalHandle: Option[ExternalHandle], referenceType: Option[ReferenceType],
@@ -86,6 +86,6 @@ case class MediaSet(internalHandle: InternalHandle, externalHandle: Option[Exter
 case class AuditHistory(created_by: Option[String], created: Option[String], lastupdated_by: Option[String], lastupdated: Option[String])
 
 case class Identity(internal_handle: InternalHandle, external_handle: Option[ExternalHandle], created: Option[String], created_by: Option[String],
-                    biographic_sets: Option[Set[BiographicSet]], biometrics: Option[Set[Biometric]], descriptions: Option[Set[Description]],
+                    biographic_sets: Option[Set[BiographicSet]], biometrics: Option[Set[Biometric]], descrions: Option[Set[Descrion]],
                     references: Option[Set[Reference]], conditions: Option[Set[IdentityCondition]], identity_media_sets: Option[Set[MediaSet]],
                     containing_person_handle: Option[InternalHandle], source: Option[String], auditHistory: Option[AuditHistory])

@@ -1,4 +1,4 @@
-package uk.gov.ipt.mi.stream
+package uk.gov..mi.stream
 
 import java.nio.file.Files
 
@@ -12,11 +12,11 @@ import org.scalatest.concurrent.Eventually
 import org.scalatest.time.{Seconds, Span}
 import org.scalatest.{Inside, Matchers, GivenWhenThen, FlatSpec}
 import org.scalatest.junit.JUnitRunner
-import uk.gov.ipt.mi.PartitionedFilter
-import uk.gov.ipt.mi.model._
-import uk.gov.ipt.mi.model.servicedelivery.ServiceDelivery
-import uk.gov.ipt.mi.stream.HashHelper.emptyHash
-import uk.gov.ipt.mi.stream.servicedelivery.ServiceDeliveryHelper
+import uk.gov..mi.PartitionedFilter
+import uk.gov..mi.model._
+import uk.gov..mi.model.servicedelivery.ServiceDelivery
+import uk.gov..mi.stream.HashHelper.emptyHash
+import uk.gov..mi.stream.servicedelivery.ServiceDeliveryHelper
 
 import scala.collection.mutable
 import scala.io.Source

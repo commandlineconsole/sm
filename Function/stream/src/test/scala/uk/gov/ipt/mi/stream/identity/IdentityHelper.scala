@@ -1,7 +1,7 @@
-package uk.gov.ipt.mi.stream.identity
+package uk.gov..mi.stream.identity
 
-import uk.gov.ipt.mi.model._
-import uk.gov.ipt.mi.stream.ModelHelper._
+import uk.gov..mi.model._
+import uk.gov..mi.stream.ModelHelper._
 
 
 object IdentityHelper {
@@ -9,24 +9,24 @@ object IdentityHelper {
 
   def createIdentity(ihId: String, ehId: String) = {
     Identity(internalHandle(ihId), Some(externalHandle(ehId)), Some("created"), Some("createdBy"),
-      Some(Set(biographicSet("biographicSetId"))), Some(biometrics), Some(desciptions), Some(references), Some(conditions), Some(Set(mediaSet(s"$ihId-mediaset"))), Some(internalHandle("personId")), Some("source"), None)
+      Some(Set(biographicSet("biographicSetId"))), Some(biometrics), Some(descions), Some(references), Some(conditions), Some(Set(mediaSet(s"$ihId-mediaset"))), Some(internalHandle("personId")), Some("source"), None)
   }
 
   def basicIdentity() = {
     Identity(internalHandle("basic-id"), None, None, None, None, None, None, None, None, None, None, None, None)
   }
 
-  def desciptions(): Set[Description] = Set(description("descr-id"))
+  def descions(): Set[Descrion] = Set(descrion("descr-id"))
 
-  def description(id: String) = Description(internalHandle(s"$id-description"), Some(externalHandle(s"$id-description")),
-    Some("createdTime"), Some("createdBy"), Some(descriptors()))
+  def descrion(id: String) = Descrion(internalHandle(s"$id-descrion"), Some(externalHandle(s"$id-descrion")),
+    Some("createdTime"), Some("createdBy"), Some(descrors()))
 
-  def descriptors(): Set[Descriptor] = Set(
-    descriptor("id1", "type1", "value1"),
-    descriptor("id2", "type2", "value2")
+  def descrors(): Set[Descror] = Set(
+    descror("id1", "type1", "value1"),
+    descror("id2", "type2", "value2")
   )
 
-  def descriptor(id: String, desc_type: String, value: String) = Descriptor(internalHandle(s"$id-descriptor"), Some(desc_type), Some(value), Some("createdDate"), Some("created_by"))
+  def descror(id: String, desc_type: String, value: String) = Descror(internalHandle(s"$id-descror"), Some(desc_type), Some(value), Some("createdDate"), Some("created_by"))
 
   def biographic(id: String) = Biographic(internalHandle(s"$id-biog"), Some(s"$id-TYPE"), Some("Biographic-Value"), Some("Biographic-Value-Type"),
     Some("created"), Some("createdBy"), Some("referenceDataSet"))

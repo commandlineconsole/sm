@@ -1,4 +1,4 @@
-package uk.gov.ipt.mi.stream
+package uk.gov..mi.stream
 
 import org.apache.commons.codec.digest.DigestUtils
 

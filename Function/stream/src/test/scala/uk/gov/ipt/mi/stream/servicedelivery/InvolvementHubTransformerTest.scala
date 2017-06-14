@@ -1,10 +1,10 @@
-package uk.gov.ipt.mi.stream.servicedelivery
+package uk.gov..mi.stream.servicedelivery
 
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 import org.scalatest.{FlatSpec, Inside, Matchers}
-import uk.gov.ipt.mi.model.HubServiceDeliveryInvolvement
-import uk.gov.ipt.mi.stream.HashHelper
+import uk.gov..mi.model.HubServiceDeliveryInvolvement
+import uk.gov..mi.stream.HashHelper
 
 @RunWith(classOf[JUnitRunner])
 class InvolvementHubTransformerTest extends FlatSpec with Matchers with Inside {

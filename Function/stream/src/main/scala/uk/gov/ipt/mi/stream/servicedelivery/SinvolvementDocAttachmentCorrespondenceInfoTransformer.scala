@@ -1,18 +1,18 @@
-package uk.gov.ipt.mi.stream.servicedelivery
+package uk.gov..mi.stream.servicedelivery
 
 import org.joda.time.format.ISODateTimeFormat
 import org.joda.time.{DateTime, DateTimeZone}
-import uk.gov.ipt.mi.DateHelper
-import uk.gov.ipt.mi.model.SServiceDeliveryCorrInfo
-import uk.gov.ipt.mi.model.servicedelivery.{Correspondence, ServiceDelivery}
-import uk.gov.ipt.mi.stream.HashHelper
-import uk.gov.ipt.mi.stream.HashHelper._
+import uk.gov..mi.DateHelper
+import uk.gov..mi.model.SServiceDeliveryCorrInfo
+import uk.gov..mi.model.servicedelivery.{Correspondence, ServiceDelivery}
+import uk.gov..mi.stream.HashHelper
+import uk.gov..mi.stream.HashHelper._
 
 
 object SinvolvementDocAttachmentCorrespondenceInfoTransformer {
 
   def correspondenceInfo(messageId: String, serviceDelivery: ServiceDelivery, timestamp: Long): List[SServiceDeliveryCorrInfo] = {
-    val source = "IPT"
+    val source = ""
     val fmt = ISODateTimeFormat.dateTime()
     val time = new DateTime(timestamp, DateTimeZone.UTC)
 

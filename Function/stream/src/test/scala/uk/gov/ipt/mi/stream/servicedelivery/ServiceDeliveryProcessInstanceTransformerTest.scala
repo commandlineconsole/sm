@@ -1,11 +1,11 @@
-package uk.gov.ipt.mi.stream.servicedelivery
+package uk.gov..mi.stream.servicedelivery
 
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 import org.scalatest.{FlatSpec, Inside, Matchers}
-import uk.gov.ipt.mi.model.SServiceDeliveryProcessInstance
-import uk.gov.ipt.mi.model.servicedelivery.ProcessInstance
-import uk.gov.ipt.mi.stream.HashHelper.emptyHash
+import uk.gov..mi.model.SServiceDeliveryProcessInstance
+import uk.gov..mi.model.servicedelivery.ProcessInstance
+import uk.gov..mi.stream.HashHelper.emptyHash
 
 
 @RunWith(classOf[JUnitRunner])

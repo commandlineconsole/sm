@@ -1,4 +1,4 @@
-package uk.gov.ipt.mi.stream
+package uk.gov..mi.stream
 
 import java.nio.file.Files
 
@@ -12,8 +12,8 @@ import org.scalatest.concurrent.Eventually
 import org.scalatest.{FlatSpec, GivenWhenThen, Matchers}
 import org.scalatest.junit.JUnitRunner
 import org.scalatest.time.{Seconds, Span}
-import uk.gov.ipt.mi.PartitionedFilter
-import uk.gov.ipt.mi.model.{Identity, SIdentityBiographics}
+import uk.gov..mi.PartitionedFilter
+import uk.gov..mi.model.{Identity, SIdentityBiographics}
 
 import scala.collection.mutable
 import scala.io.Source

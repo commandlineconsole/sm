@@ -3,8 +3,8 @@
     {
       "biographic_set_purpose": {
         "code": "CB",
-        "longDescription": "CORE BIOGRAPHICS",
-        "shortDescription": "CORE BIOGRAPHICS"
+        "longDescrion": "CORE BIOGRAPHICS",
+        "shortDescrion": "CORE BIOGRAPHICS"
       },
       "biographics": {
         "DATE_OF_BIRTH": {
@@ -139,8 +139,8 @@
       "conditionNote": "Beware: Local Alert",
       "conditionType": {
         "code": "LOCALALERT",
-        "longDescription": "Out of country local alert",
-        "shortDescription": "Local Alert"
+        "longDescrion": "Out of country local alert",
+        "shortDescrion": "Local Alert"
       },
       "conditionUpdateDate": null,
       "created": "2016-09-28T12:27:49.065966",
@@ -165,18 +165,18 @@
   },
   "created": "2016-09-28T12:27:49.065966",
   "created_by": null,
-  "descriptions": [{
+  "descrions": [{
     "created": "2016-09-28T12:27:49.065966",
     "createdBy": "Pratap Zope",
-    "descriptors": [
+    "descrors": [
       {
         "created": "2016-09-28T12:27:49.065966",
         "createdBy": "Pratap Zope",
-        "descriptorType": "PLACEHOLDER",
-        "descriptorValue": "DESCRIPTOR_VALUE",
+        "descrorType": "PLACEHOLDER",
+        "descrorValue": "DESCROR_VALUE",
         "internal_handle": {
-          "interface_identifier": "descriptorInterfaceIdentifier",
-          "unique_identifier": "descriptorUID",
+          "interface_identifier": "descrorInterfaceIdentifier",
+          "unique_identifier": "descrorUID",
           "visibility_marker": "DEFAULT"
         }
       }
@@ -251,8 +251,8 @@
       },
       "referenceType": {
         "code": "PASSPORT",
-        "longDescription": "Passport",
-        "shortDescription": "Passport"
+        "longDescrion": "Passport",
+        "shortDescrion": "Passport"
       },
       "referenceValue": "1233241234234"
     }

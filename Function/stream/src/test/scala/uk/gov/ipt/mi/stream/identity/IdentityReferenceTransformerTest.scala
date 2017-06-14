@@ -1,11 +1,11 @@
-package uk.gov.ipt.mi.stream.identity
+package uk.gov..mi.stream.identity
 
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 import org.scalatest.{FlatSpec, Inside, Matchers}
-import uk.gov.ipt.mi.model.{Identity, SIdentityReference}
-import uk.gov.ipt.mi.stream.HashHelper
-import uk.gov.ipt.mi.stream.HashHelper.emptyHash
+import uk.gov..mi.model.{Identity, SIdentityReference}
+import uk.gov..mi.stream.HashHelper
+import uk.gov..mi.stream.HashHelper.emptyHash
 
 @RunWith(classOf[JUnitRunner])
 class IdentityReferenceTransformerTest extends FlatSpec with Matchers with Inside {

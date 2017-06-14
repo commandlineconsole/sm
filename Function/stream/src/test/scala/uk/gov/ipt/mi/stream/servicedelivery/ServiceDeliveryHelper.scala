@@ -1,7 +1,7 @@
-package uk.gov.ipt.mi.stream.servicedelivery
+package uk.gov..mi.stream.servicedelivery
 
-import uk.gov.ipt.mi.model.servicedelivery._
-import uk.gov.ipt.mi.stream.ModelHelper._
+import uk.gov..mi.model.servicedelivery._
+import uk.gov..mi.stream.ModelHelper._
 
 
 object ServiceDeliveryHelper {
@@ -55,7 +55,7 @@ object ServiceDeliveryHelper {
   def documentAttachement(id: Int): DocumentAttachment = {
     val docId = random.nextString(3)
     DocumentAttachment(internalHandle(docId), refData(random.nextInt()), s"$id-$docId", docId, refData(random.nextInt()), refData(random.nextInt()), false,
-    s"$id-$docId-stageCode", Some("created"), Some("createdBy"), Some("lastUpdated"), Some("lastUpdatedBy"), Some("description"), Some("recordDate"), correspondences)
+    s"$id-$docId-stageCode", Some("created"), Some("createdBy"), Some("lastUpdated"), Some("lastUpdatedBy"), Some("descrion"), Some("recordDate"), correspondences)
   }
 
   def documentAttachments(id: Int) : List[DocumentAttachment] = List(documentAttachement(id), documentAttachement(id))

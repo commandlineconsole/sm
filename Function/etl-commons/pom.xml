@@ -3,13 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>ipt-mi-etl</artifactId>
-        <groupId>uk.gov.ipt</groupId>
+        <artifactId>etl</artifactId>
+        <groupId>uk.gov.</groupId>
         <version>1.126-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ipt-mi-etl-commons</artifactId>
+    <artifactId>etl-commons</artifactId>
 
 
     <dependencies>

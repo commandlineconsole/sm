@@ -1,8 +1,8 @@
-package uk.gov.ipt.mi.dw.identity
+package uk.gov..mi.dw.identity
 
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.{DataFrame, SparkSession}
-import uk.gov.ipt.mi.dw.{DbConfig, DbHelper, MIIdentityHubVaultConfig}
+import uk.gov..mi.dw.{DbConfig, DbHelper, MIIdentityHubVaultConfig}
 import org.apache.spark.sql.AnalysisException
 
 class IdentityHubVaultJob(batchId: String, timestampStr: String, spark: SparkSession) {

@@ -1,4 +1,4 @@
-package uk.gov.ipt.mi.stream
+package uk.gov..mi.stream
 
 import java.nio.file.Files
 
@@ -12,10 +12,10 @@ import org.scalatest.concurrent.Eventually
 import org.scalatest.junit.JUnitRunner
 import org.scalatest.time.{Seconds, Span}
 import org.scalatest.{FlatSpec, GivenWhenThen, Matchers}
-import uk.gov.ipt.mi.model._
-import uk.gov.ipt.mi.stream.HashHelper.emptyHash
-import uk.gov.ipt.mi.stream.identity.IdentityHelper._
-import uk.gov.ipt.mi.{stream, JsonFileFilter, PartitionedFilter}
+import uk.gov..mi.model._
+import uk.gov..mi.stream.HashHelper.emptyHash
+import uk.gov..mi.stream.identity.IdentityHelper._
+import uk.gov..mi.{stream, JsonFileFilter, PartitionedFilter}
 
 import scala.collection.mutable
 import scala.io.Source
@@ -38,7 +38,7 @@ class IdentityStreamJobTest extends FlatSpec
     val sIdentityReferenceDirectory = Files.createTempDirectory(this.getClass.getSimpleName + "satellite_identity_reference")
     val sIdentityConditionDirectory = Files.createTempDirectory(this.getClass.getSimpleName + "satellite_identity_condition")
     val sIdentityBiographicsDirectory = Files.createTempDirectory(this.getClass.getSimpleName + "satellite_identity_biographics")
-    val sIdentityDescriptorsDirectory = Files.createTempDirectory(this.getClass.getSimpleName + "satellite_identity_descriptors")
+    val sIdentityDescrorsDirectory = Files.createTempDirectory(this.getClass.getSimpleName + "satellite_identity_descrors")
     val sIdentityMediasDirectory = Files.createTempDirectory(this.getClass.getSimpleName + "satellite_identity_medias")
     val lnkIdentityPersonDirectory = Files.createTempDirectory(this.getClass.getSimpleName + "satellite_identity_medias")
 
@@ -48,7 +48,7 @@ class IdentityStreamJobTest extends FlatSpec
     println(s"Created satellite-reference-directory [${sIdentityReferenceDirectory.toUri.toString}]")
     println(s"Created satellite-condition-directory [${sIdentityConditionDirectory.toUri.toString}]")
     println(s"Created satellite-biographics-directory [${sIdentityBiographicsDirectory.toUri.toString}]")
-    println(s"Created satellite-descritpros-directory [${sIdentityDescriptorsDirectory.toUri.toString}]")
+    println(s"Created satellite-descritpros-directory [${sIdentityDescrorsDirectory.toUri.toString}]")
     println(s"Created satellite-medias-directory [${sIdentityMediasDirectory.toUri.toString}]")
     println(s"Created link-person-directory [${lnkIdentityPersonDirectory.toUri.toString}]")
 
@@ -59,7 +59,7 @@ class IdentityStreamJobTest extends FlatSpec
       sIdentityReferencePath = sIdentityReferenceDirectory.toUri.toString,
       sIdentityConditionPath = sIdentityConditionDirectory.toUri.toString,
       sIdentityBiographicsPath = sIdentityBiographicsDirectory.toUri.toString,
-      sIdentityDescriptorsPath = sIdentityDescriptorsDirectory.toUri.toString,
+      sIdentityDescrorsPath = sIdentityDescrorsDirectory.toUri.toString,
       sIdentityMediasPath = sIdentityMediasDirectory.toUri.toString,
       sIdentityLinkPersonPath = lnkIdentityPersonDirectory.toUri.toString
     )
@@ -95,7 +95,7 @@ class IdentityStreamJobTest extends FlatSpec
       sIdentityReferenceDirectory.toFile.list().toList should have size 1
       sIdentityConditionDirectory.toFile.list().toList should have size 1
       sIdentityBiographicsDirectory.toFile.list().toList should have size 1
-      sIdentityDescriptorsDirectory.toFile.list().toList should have size 1
+      sIdentityDescrorsDirectory.toFile.list().toList should have size 1
       sIdentityMediasDirectory.toFile.list().toList should have size 1
       lnkIdentityPersonDirectory.toFile.list().toList should have size 1
     }
@@ -144,7 +144,7 @@ class IdentityStreamJobTest extends FlatSpec
     actualBiometrics.head.message_id should equal(kafkamessageid1)
     actualBiometrics.head.identity_hk should not equal emptyHash
     actualBiometrics.head.bsn_event_datetime should equal(expectedIdentity.created)
-    actualBiometrics.head.record_source should equal("IPT")
+    actualBiometrics.head.record_source should equal("")
     actualBiometrics.head.identity_handle_id should equal(expectedIdentity.internal_handle.interface_identifier)
     Some(actualBiometrics.head.biometric_handle_id) should equal(expectedIdentity.biometrics.map(_.toList.sorted.head.internalHandle.interface_identifier))
     actualBiometrics.head.rec_seqno should equal(0)
@@ -170,7 +170,7 @@ class IdentityStreamJobTest extends FlatSpec
     actualReferences.head.message_id should equal(kafkamessageid1)
     actualReferences.head.identity_hk should not equal emptyHash
     actualReferences.head.bsn_event_datetime should equal(expectedIdentity.created)
-    actualReferences.head.record_source should equal("IPT")
+    actualReferences.head.record_source should equal("")
     actualReferences.head.identity_handle_id should equal(expectedIdentity.internal_handle.interface_identifier)
     Some(actualReferences.head.reference_handle_id) should equal(expectedIdentity.references.map(_.toList.sorted.head.internalHandle.interface_identifier))
     actualReferences.head.rec_seqno should equal(0)
@@ -195,7 +195,7 @@ class IdentityStreamJobTest extends FlatSpec
     actualConditions.head.message_id should equal(kafkamessageid1)
     actualConditions.head.identity_hk should not equal emptyHash
     actualConditions.head.bsn_event_datetime should equal(expectedIdentity.created)
-    actualConditions.head.record_source should equal("IPT")
+    actualConditions.head.record_source should equal("")
     actualConditions.head.identity_handle_id should equal(expectedIdentity.internal_handle.interface_identifier)
     Some(actualConditions.head.condition_handle_id) should equal(expectedIdentity.conditions.map(_.toList.sorted.head.internalHandle.interface_identifier))
     actualConditions.head.rec_seqno should equal(0)
@@ -221,7 +221,7 @@ class IdentityStreamJobTest extends FlatSpec
 
     actualBiographics.head.bsn_event_datetime should equal(expectedIdentity.created)
     actualBiographics.head.identity_hk should not equal emptyHash
-    actualBiographics.head.record_source should equal("IPT")
+    actualBiographics.head.record_source should equal("")
     actualBiographics.head.identity_handle_id should equal(expectedIdentity.internal_handle.interface_identifier)
 
     Some(actualBiographics.head.biog_set_handle_id) should equal(expectedIdentity.biographic_sets.map(_.toList.sorted.head.internal_handle.interface_identifier))
@@ -241,26 +241,26 @@ class IdentityStreamJobTest extends FlatSpec
     actualBiographics.head.biographic_value should equal(expectedBiographic.value)
     actualBiographics.head.biographic_value_type_cd should equal(expectedBiographic.value_type)
 
-    Then("SIdentityDescriptions check that .json file contains correct fields mapped")
+    Then("SIdentityDescrions check that .json file contains correct fields mapped")
 
-    val sidentityDescriptorsPartitionPath = sIdentityDescriptorsDirectory.resolve(f"year=${time.getYear}%04d/month=${time.getMonthOfYear}%02d/day=${time.getDayOfMonth}%02d/hour=${time.getHourOfDay}%02d/batch-1000")
+    val sidentityDescrorsPartitionPath = sIdentityDescrorsDirectory.resolve(f"year=${time.getYear}%04d/month=${time.getMonthOfYear}%02d/day=${time.getDayOfMonth}%02d/hour=${time.getHourOfDay}%02d/batch-1000")
 
-    eventually(sidentityDescriptorsPartitionPath.toFile.list().toList should contain("_SUCCESS"))
+    eventually(sidentityDescrorsPartitionPath.toFile.list().toList should contain("_SUCCESS"))
 
-    val sIdentityDescriptors = sidentityDescriptorsPartitionPath.toFile.listFiles(new PartitionedFilter()).toList
+    val sIdentityDescrors = sidentityDescrorsPartitionPath.toFile.listFiles(new PartitionedFilter()).toList
 
-    val actualDescriptors: List[SIdentityDescriptors] = sIdentityDescriptors.flatMap(sIdentityDescriptor => Source.fromFile(sIdentityDescriptor).getLines.toList.map(sIdentityDescriptorsJson => parse(sIdentityDescriptorsJson).extract[SIdentityDescriptors])).sortBy(_.descr_rec_seqno)
+    val actualDescrors: List[SIdentityDescrors] = sIdentityDescrors.flatMap(sIdentityDescror => Source.fromFile(sIdentityDescror).getLines.toList.map(sIdentityDescrorsJson => parse(sIdentityDescrorsJson).extract[SIdentityDescrors])).sortBy(_.descr_rec_seqno)
 
-    actualDescriptors should have size 2
-    actualDescriptors.head.message_id should equal(kafkamessageid1)
-    actualDescriptors.head.identity_hk should not equal emptyHash
+    actualDescrors should have size 2
+    actualDescrors.head.message_id should equal(kafkamessageid1)
+    actualDescrors.head.identity_hk should not equal emptyHash
 
 
-    actualDescriptors.head.bsn_event_datetime should equal(expectedIdentity.created)
-    actualDescriptors.head.record_source should equal("IPT")
-    actualDescriptors.head.identity_handle_id should equal(expectedIdentity.internal_handle.interface_identifier)
+    actualDescrors.head.bsn_event_datetime should equal(expectedIdentity.created)
+    actualDescrors.head.record_source should equal("")
+    actualDescrors.head.identity_handle_id should equal(expectedIdentity.internal_handle.interface_identifier)
 
-    Some(actualDescriptors.head.descr_set_handle_id) should equal(expectedIdentity.descriptions.map(_.toList.sorted.head.internalHandle.interface_identifier))
+    Some(actualDescrors.head.descr_set_handle_id) should equal(expectedIdentity.descrions.map(_.toList.sorted.head.internalHandle.interface_identifier))
 
     Then("SIdentityMedia check that .json file contains correct fields mapped")
 
@@ -277,7 +277,7 @@ class IdentityStreamJobTest extends FlatSpec
     actualMedias.head.message_id should equal(kafkamessageid1)
 
     actualMedias.head.bsn_event_datetime should equal(expectedIdentity.created)
-    actualMedias.head.record_source should equal("IPT")
+    actualMedias.head.record_source should equal("")
     actualMedias.head.identity_handle_id should equal(expectedIdentity.internal_handle.interface_identifier)
 
     val expectedMediaSet = expectedIdentity.identity_media_sets.map(_.toList.sorted.head).get
@@ -313,7 +313,7 @@ class IdentityStreamJobTest extends FlatSpec
 
     linkIdentityPerson.head.message_id should equal(kafkamessageid1)
     linkIdentityPerson.head.identity_hk should not equal emptyHash
-    linkIdentityPerson.head.record_source should equal("IPT")
+    linkIdentityPerson.head.record_source should equal("")
     linkIdentityPerson.head.identity_handle_id should equal(expectedIdentity.internal_handle.interface_identifier)
     Some(linkIdentityPerson.head.person_handle_id) should equal(expectedIdentity.containing_person_handle.map(_.interface_identifier))
 
@@ -324,7 +324,7 @@ class IdentityStreamJobTest extends FlatSpec
     deleteFile(sIdentityReferenceDirectory.toFile)
     deleteFile(sIdentityConditionDirectory.toFile)
     deleteFile(sIdentityBiographicsDirectory.toFile)
-    deleteFile(sIdentityDescriptorsDirectory.toFile)
+    deleteFile(sIdentityDescrorsDirectory.toFile)
     deleteFile(sIdentityMediasDirectory.toFile)
     deleteFile(lnkIdentityPersonDirectory.toFile)
   }

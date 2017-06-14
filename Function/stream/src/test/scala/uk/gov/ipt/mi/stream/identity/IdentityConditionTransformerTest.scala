@@ -1,11 +1,11 @@
-package uk.gov.ipt.mi.stream.identity
+package uk.gov..mi.stream.identity
 
 import org.junit.runner.RunWith
 import org.scalatest.{FlatSpec, Inside, Matchers}
 import org.scalatest.junit.JUnitRunner
-import uk.gov.ipt.mi.model.{Identity, SIdentityCondition}
-import uk.gov.ipt.mi.stream.HashHelper
-import uk.gov.ipt.mi.stream.HashHelper.emptyHash
+import uk.gov..mi.model.{Identity, SIdentityCondition}
+import uk.gov..mi.stream.HashHelper
+import uk.gov..mi.stream.HashHelper.emptyHash
 import scala.io.Source
 
 

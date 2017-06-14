@@ -1,4 +1,4 @@
-package uk.gov.ipt.mi.model
+package uk.gov..mi.model
 
 
 case class LinkPerson(message_id: String, bsn_event_datetime: Option[String], lnd_datetime: String,

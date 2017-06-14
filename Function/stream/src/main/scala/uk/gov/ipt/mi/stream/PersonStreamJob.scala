@@ -1,11 +1,11 @@
-package uk.gov.ipt.mi.stream
+package uk.gov..mi.stream
 
 import org.apache.spark.streaming.dstream.DStream
 import org.joda.time.format.ISODateTimeFormat
 import org.joda.time.{DateTime, DateTimeZone}
-import uk.gov.ipt.mi.model._
-import uk.gov.ipt.mi.stream.HashHelper.sha1
-import uk.gov.ipt.mi.stream.RDDHelper._
+import uk.gov..mi.model._
+import uk.gov..mi.stream.HashHelper.sha1
+import uk.gov..mi.stream.RDDHelper._
 
 class PersonStreamJob() {
 
@@ -21,7 +21,7 @@ class PersonStreamJob() {
 
   def streamHubPerson(personStreamTime: DStream[(String, Person, Long)], basePath: String): Unit = {
     val hubPerson = personStreamTime.map { case (messageId: String, person: Person, timestamp: Long) =>
-      val source = "IPT"
+      val source = ""
       val fmt = ISODateTimeFormat.dateTime()
       val time = new DateTime(timestamp, DateTimeZone.UTC)
 
@@ -34,7 +34,7 @@ class PersonStreamJob() {
 
   def streamPersonChangeLog(personStreamTime: DStream[(String, Person, Long)], basePath: String): Unit = {
     personStreamTime.map { case (messageId: String, person: Person, timestamp: Long) =>
-      val source = "IPT"
+      val source = ""
       val fmt = ISODateTimeFormat.dateTime()
       val time = new DateTime(timestamp, DateTimeZone.UTC)
 
@@ -52,7 +52,7 @@ class PersonStreamJob() {
 
   def streamPersonVisibility(personStreamTime: DStream[(String, Person, Long)], basePath: String): Unit = {
     personStreamTime.map { case (messageId: String, person: Person, timestamp: Long) =>
-      val source = "IPT"
+      val source = ""
       val fmt = ISODateTimeFormat.dateTime()
       val time = new DateTime(timestamp, DateTimeZone.UTC)
 
@@ -68,7 +68,7 @@ class PersonStreamJob() {
 
   def streamLinkPerson(personStreamTime: DStream[(String, Person, Long)], basePath: String): Unit = {
     personStreamTime.flatMap { case (messageId: String, person: Person, timestamp: Long) =>
-      val source = "IPT"
+      val source = ""
       val fmt = ISODateTimeFormat.dateTime()
       val time = new DateTime(timestamp, DateTimeZone.UTC)
 

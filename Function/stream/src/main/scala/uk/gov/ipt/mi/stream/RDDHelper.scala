@@ -1,4 +1,4 @@
-package uk.gov.ipt.mi.stream
+package uk.gov..mi.stream
 
 import org.apache.spark.streaming.Time
 import org.apache.spark.streaming.dstream.DStream

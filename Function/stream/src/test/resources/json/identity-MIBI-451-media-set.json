@@ -91,7 +91,7 @@
     }
   ],
 
-  "descriptions":
+  "descrions":
   [
 
   ],
@@ -116,8 +116,8 @@
       "referenceType":
       {
         "code": "PPT",
-        "shortDescription": "",
-        "longDescription": ""
+        "shortDescrion": "",
+        "longDescrion": ""
       },
 
       "referenceValue": "9870970U90",
@@ -152,8 +152,8 @@
       "biographic_set_purpose":
       {
         "code": "CB",
-        "shortDescription": "CORE BIOGRAPHICS",
-        "longDescription": "CORE BIOGRAPHICS"
+        "shortDescrion": "CORE BIOGRAPHICS",
+        "longDescrion": "CORE BIOGRAPHICS"
       },
 
       "created": "2016-12-20T12:35:52.956",
